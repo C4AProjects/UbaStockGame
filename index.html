@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>UbaGame</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <!-- hide the navigation bar when bookmarked on an iPhone -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.jqplot.min.css" />
+
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="plugins/ko/knockout.js"></script>
+    <script type="text/javascript" src="plugins/ko/knockout.viewmodel.min.js"></script>
+    <script type="text/javascript" src="plugins/jqplot/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="plugins/jqplot/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="plugins/jqplot/jqplot.canvasAxisLabelRenderer.min.js"></script>
+
+    <script src="plugins/jqplot/jqplot.donutRenderer.min.js"></script>
+
+
+
+    <!-- Load Viewmodels -->
+    <script type="text/javascript" src="viewmodels/LoginViewModel.js"></script>
+    <script type="text/javascript" src="viewmodels/TradeViewModel.js"></script>
+    <script type="text/javascript" src="viewmodels/NewsViewModel.js"></script>
+    <script type="text/javascript" src="viewmodels/TriviaViewModel.js"></script>
+     <script type="text/javascript" src="viewmodels/TriviaDetailsViewModel.js"></script>
+     <script type="text/javascript" src="viewmodels/TriviaCompleteViewModel.js"></script>
+    <!-- Automatically included by PhoneGap Build -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!-- theme -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+    
+    <!-- application specific styling -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+
+  <!-- /////// login page start /////// -->
+  <section data-role="page" id="login" class="bg-spec">
+
+      <div data-role="content" role="main"> 
+        <div class="mc-text-center mc-bottom-margin-1-5">
+            <img src="img/logo.png" width="60%">
+        </div>
+        <div class="mc-text-center mc-bottom-margin-1-5">
+            <input type="text" name="txt-email" id="txt-email" value="" data-bind="value:username" placeholder="Enter your email address">
+        </div>
+        <div class="mc-text-center mc-bottom-margin-1-5">
+            <input type="password" name="txt-password" id="txt-password" value="" data-bind="value:password" placeholder="Enter your password">
+        </div>
+        <!-- <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Submit</a> -->
+        <a href="views/portfolio.html" data-transition="slide" id="loginBtn" class="rounded ui-btn ui-btn-b mc-top-margin-1-5" style="width:150px;margin:auto">Sign In</a>
+        <div class="mc-text-center">
+         <p class="ui-title">OR</p>
+     </div>
+     <a href="#signup" data-transition="slide" id="btn-submit" class="rounded ui-btn ui-btn-d mc-top-margin-1-5" style="width:150px;margin:auto">Sign Up</a>
+     <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+        <div role="main" class="ui-content">
+            <h3 class="mc-text-danger">Login Failed</h3>
+            <p>Did you enter the right credentials?</p>
+            <p data-bind="text:errormessage"></p>
+            <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+        </div>
+    </div>
+    <div data-role="popup" id="dlg-invalid-server" data-dismissible="false" style="max-width:400px;">
+        <div role="main" class="ui-content">
+            <h3 class="mc-text-danger">Connection Failed</h3>
+            <p>Could not connect to server!!</p>
+            <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+        </div>
+    </div>
+</section>
+<!-- /////// login page end /////// -->
+
+
+<!-- /////// news page start /////// -->
+<section id="news" data-role="page">
+    <div data-role="header" data-theme="d">
+        <a data-iconpos="notext" href="#mypanel" data-role="button" data-icon="flat-menu"></a>     
+        <h1>News</h1>
+    </div>
+
+    <div data-role="content" id="content" data-theme="c">
+     <span>Sort By:</span>
+     <fieldset class="ui-grid-a">
+        <div class="ui-block-a"> 
+            <select name="select-type" id="select-choice-t" data-native-menu="false" class="rounded"
+            >
+            <option value="opening">Most Recent</option>
+        </select>
+    </div>
+    <div class="ui-block-b">
+        <select name="select-type2" id="select-choice-t2" data-native-menu="false"
+        >
+        <option value="opening">Topic</option>
+    </select>
+</div>                    
+</fieldset>
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Search News..." data-inset="true" data-theme="c">
+        <li data-bind="click:loadDetails">
+        <img src="img/news11.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>UBA Capital, 5 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="img/news1.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Reuters Africa, 7 mins ago</span>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="img/news2.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>This Day Live, 12 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="img/news4.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Nigeria President, 17 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="img/news3.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Most Beautiful, 22 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="img/news5.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Richest Man Africa, 26 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+</ul>
+
+</div>
+</section>
+<!-- /////// news page end /////// -->
+
+<!-- /////// news details page start /////// -->
+<section id="newsdetails" data-role="page">
+    <div data-role="header" data-theme="d" data-add-back-btn="true">
+        <h1>News</h1>
+    </div>
+    <div data-role="content" role="main" class="tradedetails">
+        <div class="darklight tcenter tbold" style="width:100%">
+          <img src="img/news11.jpg" height="150px" style="margin-top:8px;"> <br>
+          <span>Loren ipsum dolor sit amet, consectetur adipiscing elit</span> 
+      </div>
+      <div style="margin:5px">
+        <span style="font-size: small;">UBA Capital, 5 min ago</span>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+    </div>
+</div>
+</section>
+<!-- /////// news details page end /////// -->
+
+<!-- /////// trade page start /////// -->
+<section id="trade" data-role="page">
+    <div data-role="header" data-theme="d">  
+        <a data-iconpos="notext" href="#mypanel" data-role="button" data-icon="flat-menu"></a>   
+        <h1>Trade</h1>
+    </div>
+    <div data-role="content" id="content">          
+        <span class="tred">SELECT A COMPANY TO START TRADING</span>
+
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search Trade..." data-inset="true">
+
+            <li class="whiteborder" data-bind="click:loadDetails">
+             <fieldset class="ui-grid-c">
+                <div class="ui-block-a" style="width:15%;margin-left:0px;"> <img src="img/ng.png" /></div>
+                <div class="ui-block-b" style="width:30%"><h1>NASDAQ</h1></div>
+                <div class="ui-block-c tright tcenter" style="width:30%"><h1>4651.33</h1></div>
+                <div class="ui-block-d tright twhite" style="width:25%;margin-right:-10px;"><div class="bggreen tcenter" >+19.08<br/>0.41</div></div>
+            </fieldset>
+        </li>        
+
+        <li class="whiteborder" data-bind="click:loadDetails">
+           <fieldset class="ui-grid-c">
+            <div class="ui-block-a" style="width:15%;margin-left:0px;"> <img src="img/ng.png" /></div>
+            <div class="ui-block-b" style="width:30%"><h1>DOW</h1></div>
+            <div class="ui-block-c tright tcenter" style="width:30%"><h1>4651.33</h1></div>
+            <div class="ui-block-d tright twhite" style="width:25%;margin-right:-10px;"><div class="bggreen tcenter">+19.08<br/>0.41</div></div>
+        </fieldset>   
+    </li>
+
+    <li class="whiteborder" data-bind="click:loadDetails">
+       <fieldset class="ui-grid-c">
+        <div class="ui-block-a" style="width:15%;margin-left:0px;"> <img src="img/ng.png" /></div>
+        <div class="ui-block-b" style="width:30%"><h1>S&P 500</h1></div>
+        <div class="ui-block-c tright tcenter" style="width:30%"><h1>4651.33</h1></div>
+        <div class="ui-block-d tright twhite" style="width:25%;margin-right:-10px;"><div class="bggreen tcenter">+19.08<br/>0.41</div></div>
+    </fieldset>   
+</li>
+
+<li class="whiteborder" data-bind="click:loadDetails">
+   <fieldset class="ui-grid-c">
+    <div class="ui-block-a" style="width:15%;margin-left:0px;"> <img src="img/ng.png" /></div>
+    <div class="ui-block-b" style="width:30%"><h1>NASDAQ</h1></div>
+    <div class="ui-block-c tright tcenter" style="width:30%"><h1>4651.33</h1></div>
+    <div class="ui-block-d tright twhite" style="width:25%;margin-right:-10px;"><div class="bgred tcenter">-19.08<br/>-0.41</div></div>
+</fieldset>   
+</li>
+
+<li class="whiteborder" data-bind="click:loadDetails">
+   <fieldset class="ui-grid-c">
+    <div class="ui-block-a" style="width:15%;margin-left:0px;"> <img src="img/ng.png" /></div>
+    <div class="ui-block-b" style="width:30%"><h1>NASDAQ</h1></div>
+    <div class="ui-block-c tright tcenter" style="width:30%"><h1>4651.33</h1></div>
+    <div class="ui-block-d tright twhite" style="width:25%;margin-right:-10px;"><div class="bggreen tcenter">+19.08<br/>0.41</div></div>
+</fieldset>   
+</li>
+
+</ul>
+</div>
+</section>
+<!-- /////// trade page end /////// -->
+
+
+
+
+<!-- /////// signup page start /////// -->
+<section data-role="page" id="signup">
+    <div data-role="header" data-add-back-btn="true" data-theme="d"><h2>Sign Up</h2></div>
+    <div data-role="content" role="main">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a"> <input type="text" name="txt-email" id="txt-email" value="" data-bind="value:fname" placeholder="First Name"></div>
+            <div class="ui-block-b"> <input type="text" name="txt-email" id="txt-email" value="" data-bind="value:lname" placeholder="Last Name"></div>
+        </fieldset>
+
+        <input type="text" name="txt-email" id="txt-email" value="" data-bind="value:username"
+        placeholder="Enter your email address">
+
+        <input type="text" name="txt-email" id="txt-email" value="" data-bind="value:username"
+        placeholder="Choose a username">
+        
+        <input type="password" name="txt-password" id="txt-password" value="" data-bind="value:password" placeholder="Choose a password">
+
+        <select name="select-type" id="select-choice-t" data-native-menu="false"
+        data-bind="value: entryType,optionsCaption: 'Select your state...'">
+        <option value="1">State 1</option>
+        <option value="2">State 2</option>
+        <option value="3">State 3</option>
+    </select>
+    <div class="mc-text-center">
+     <span>Choose an avatar :</span>
+ </div>
+ <fieldset class="ui-grid-c">
+    <div class="ui-block-a"><img src="img/headwrap_female_icon.png"></div>
+    <div class="ui-block-b"><img src="img/cool_frames_female_icon.png"></div>
+    <div class="ui-block-c"><img src="img/pearls_female_icon.png"></div>
+    <div class="ui-block-d"><img src="img/yellow_dress_female_icon.jpg"></div>
+</fieldset>
+<fieldset class="ui-grid-c">
+    <div class="ui-block-a"><img src="img/red_headband_male_icon.png"></div>
+    <div class="ui-block-b"><img src="img/orange_shades_male_icon.png"></div>
+    <div class="ui-block-c"><img src="img/yellow_hat_male_icon.png"></div>
+    <div class="ui-block-d"><img src="img/blue_male_icon.png"></div>
+</fieldset>
+</div>
+
+<a href="#portfolio" data-transition="slide" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5 rounded">Submit</a>
+<div data-role="popup" id="dlg-signup-failed" data-dismissible="false" style="max-width:400px;">
+    <div role="main" class="ui-content">
+        <h3 class="mc-text-danger">Signup Failed</h3>
+        <p data-bind="text:errormessage"></p>
+        <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+    </div>
+</div>
+<div data-role="popup" id="dlg-invalid-server" data-dismissible="false" style="max-width:400px;">
+    <div role="main" class="ui-content">
+        <h3 class="mc-text-danger">Connection Failed</h3>
+        <p>Could not connect to server!!</p>
+        <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+    </div>
+</div>
+</section>
+<div data-role="panel" id="mypanel" data-theme="d">
+  <a href="#" data-role="button" data-icon="exit" id="exit" >EXIT</a>
+</div> 
+<div data-role="footer" data-position="fixed" data-theme="c" class="dark">    
+    <div data-role="navbar" data-grid="d" class="dark"> 
+        <ul> 
+            <li><a href="views/portfolio.html" id="portfolio" data-icon="portfolio" data-role="button" data-iconpos="left" data-transition="slide" class="dark">Portfolio</a></li>
+            <li><a href="views/trivia.html" id="trivia" data-icon="question" data-transition="slide" class="dark">Trivia</a></li> 
+            <li><a href="#trade" id="trade" data-icon="trade" data-transition="slide" class="dark">Trade</a></li> 
+            <li><a href="views/history.html" id="history" data-icon="timeline" data-transition="slide" class="dark">History</a></li> 
+            <li><a href="#news" id="news" data-icon="new" data-transition="slide" class="dark">News</a></li>  
+        </ul> 
+    </div> 
+</div>  
+</body>
+</html>
