@@ -33,6 +33,11 @@ $(document).on("pagecreate","section[data-role=page]", function () {
         if(!ko.dataFor(document.getElementById("trade")))
         ko.applyBindings(tradevm,document.getElementById("trade"));
     }
+    if ($(this).attr("id") == "tradedetails") {
+        // Only when on #trade
+        if(!ko.dataFor(document.getElementById("tradedetails")))
+        ko.applyBindings(tradedetailsvm,document.getElementById("tradedetails"));
+    }
     if ($(this).attr("id") == "news") {
         // Only when on #news
         if(!ko.dataFor(document.getElementById("news")))

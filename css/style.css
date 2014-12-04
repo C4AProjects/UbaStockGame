@@ -432,6 +432,7 @@ progress::-webkit-progress-value {
   border-bottom:1px solid #000 !important;
   border-left:1px solid #000 !important;
 }
+
 .ui-input-text{
   background: rgba(0, 0, 0, 0) !important;
   border:none !important;
@@ -491,4 +492,15 @@ text-align: center;
 .tspace{
   width:40%;
   text-align:right;
+}
+
+.smallinput{
+  background-color: white !important;
+width:70px !important;
+height:20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color:black !important;
+  border:2px solid gray !important;
 }
