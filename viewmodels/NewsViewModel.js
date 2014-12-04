@@ -7,6 +7,6 @@ var newsvm = new function() {
     this.foo = ko.observable();
     // ----- public functions
     this.loadDetails=function(){
-  $("body").pagecontainer("change", "#newsdetails", { transition: 'slide' });
+  $("body").pagecontainer("change", "newsdetails.html", { transition: 'slide' });
 };
   };

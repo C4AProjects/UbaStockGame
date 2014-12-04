@@ -32,7 +32,7 @@
                   userInfo.email=result.email;
                   userInfo.username=result.fname+" "+result.lname;
                   userInfo.apiKey=result.apiKey;
-                  $("body").pagecontainer("change", "#home", { transition: 'slide' });
+                  $("body").pagecontainer("change", "../views/portfolio.html", { transition: 'slide' });
                   
                 }
                 else {

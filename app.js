@@ -27,8 +27,20 @@ $(document).on("pagecreate","section[data-role=page]", function () {
         if(!ko.dataFor(document.getElementById("triviacomplete")))
         ko.applyBindings(triviacompletevm,document.getElementById("triviacomplete"));
     }
+
+    if ($(this).attr("id") == "trade") {
+        // Only when on #trade
+        if(!ko.dataFor(document.getElementById("trade")))
+        ko.applyBindings(tradevm,document.getElementById("trade"));
+    }
+    if ($(this).attr("id") == "news") {
+        // Only when on #news
+        if(!ko.dataFor(document.getElementById("news")))
+        ko.applyBindings(newsvm,document.getElementById("news"));
+    }
 });
 $(document).on("pageshow","section[data-role=page]", function () {
+
 if ($(this).attr("id") == "triviadetails") {
     triviadetailsvm.submitted(false);
     triviadetailsvm.score(0);
@@ -101,8 +113,6 @@ $(document).ready(function () {
     l.onclick = EnableToolbar;
   // bind each view model to a jQueryMobile page
   ko.applyBindings(loginvm, document.getElementById("login"));
-  ko.applyBindings(tradevm,document.getElementById("trade"));
-  ko.applyBindings(newsvm,document.getElementById("news"));
 });
 
 var ExitApp=function(){

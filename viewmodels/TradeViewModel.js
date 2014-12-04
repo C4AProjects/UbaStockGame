@@ -8,6 +8,6 @@ var tradevm = new function() {
     this.foo = ko.observable();
     // ----- public functions
     this.loadDetails=function(){
-  $("body").pagecontainer("change", "views/tradedetails.html", { transition: 'slide' });
+  $("body").pagecontainer("change", "tradedetails.html", { transition: 'slide' });
 };
   };
