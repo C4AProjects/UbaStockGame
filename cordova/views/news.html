@@ -1,0 +1,75 @@
+
+<!-- /////// news page start /////// -->
+<section id="news" data-role="page">
+    <div data-role="header" data-theme="d">
+        <a data-iconpos="notext" href="#mypanel" data-role="button" data-icon="flat-menu"></a>     
+        <h1>News</h1>
+    </div>
+
+    <div data-role="content" id="content" data-theme="c">
+     <span>Sort By:</span>
+     <fieldset class="ui-grid-a">
+        <div class="ui-block-a"> 
+            <select name="select-type" id="select-choice-t" data-theme="c" data-native-menu="false"
+            >
+            <option value="opening">Most Recent</option>
+        </select>
+    </div>
+    <div class="ui-block-b">
+        <select name="select-type2" id="select-choice-t2" data-theme="c" data-native-menu="false"
+        >
+        <option value="opening">Topic</option>
+    </select>
+</div>                    
+</fieldset>
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Search News..." data-inset="true" data-theme="c">
+        <li data-bind="click:loadDetails">
+        <img src="../img/news11.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>UBA Capital, 5 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="../img/news1.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Reuters Africa, 7 mins ago</span>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="../img/news2.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>This Day Live, 12 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="../img/news4.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Nigeria President, 17 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="../img/news3.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Most Beautiful, 22 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+    </li>
+    <li data-bind="click:loadDetails">
+        <img src="../img/news5.jpg" style="margin-top:4px;margin-bottom:4px;">
+        <div class="pushleft">
+            <span>Richest Man Africa, 26 mins ago</span>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
+        </div>
+
+    </li>
+</ul>
+
+</div>
+</section>
+<!-- /////// news page end /////// -->
