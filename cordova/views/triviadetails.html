@@ -1,0 +1,28 @@
+<!-- /////// trivia page start /////// -->
+<section id="triviadetails" data-role="page">
+    <div data-role="header" data-theme="d">
+        <a data-iconpos="notext" href="#mypanel" data-role="button" data-icon="flat-menu"></a>     
+        <h1>Trivia Questions</h1>
+    </div>
+<div data-role="content" id="content" class="tradedetails">
+ <div class="ui-grid-solo darklight">
+ 	<div class="ui-block-a tcenter">
+        	<span data-bind="text:questionTitle">Trade Definitions Quiz</span>
+        	<br>
+            <progress max="5" value="2" class="shadow" data-bind="value:(currentIndex()+1)"></progress>  
+            <span style="margin-left:10px" data-bind="text: (currentIndex()+1) + ' of 5'">2 of 5</span>
+            <p>   </p>      
+        </div>
+
+    </div>  
+    <p data-bind="text:currentQuestion().question">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?
+</p>
+<div data-bind="foreach: currentQuestion().choices" id="choices">
+<a href="#" class="ui-btn ui-btn-c achoice" data-bind="text:$data, click: $parent.processQuestion">Loren ipsum sit amet</a>
+</div>
+<a href="#" class="rounded ui-btn ui-btn-b mc-top-margin-1-5" style="width:150px;margin:auto" data-bind="click: nextQuestion">Next</a>
+</div>
+    
+</section>
+<!-- /////// trivia page end /////// -->
