@@ -10,7 +10,7 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState); 
 		setContentView(R.layout.activity_main);
 		
-		// let's do this!
+		// let's do this shit!
 		
 	}
 } 
