@@ -30,7 +30,7 @@ public abstract class Screen extends Fragment {
 	
 	
 	/**
-	 * Get the ActionBar (from the <code>Screen Fragment</code>.
+	 * Get the ActionBar (from the <code>Screen Fragment</code>).
 	 * @return
 	 */
 	public ActionBar getActionBar() {

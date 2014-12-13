@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.ubagroup.capital.app.R;
@@ -41,6 +42,10 @@ public class Act extends FragmentActivity {
             return super.onOptionsItemSelected(item);
         }
     }
+	
+	public View getView(int id) {
+		return findViewById(id);
+	}
 	
 	/**
 	 * Because we're very lazy developers.
