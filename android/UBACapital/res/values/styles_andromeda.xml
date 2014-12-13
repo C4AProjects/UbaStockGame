@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,17 +16,17 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    
+
     <!-- Layout Custom Style -->
-     <style name="layoutStyle" parent="AppBaseTheme">
+    <style name="layoutStyle" parent="AppBaseTheme">
         <item name="android:layout_marginBottom">2dip</item>
         <item name="android:layout_marginLeft">2dip</item>
         <item name="android:layout_marginRight">2dip</item>
         <item name="android:layout_marginTop">5dip</item>
         <item name="android:background">@drawable/round_rectangle</item>
     </style>
-    
-      <style name="layoutSeparator" parent="AppBaseTheme">
+
+    <style name="layoutSeparator" parent="AppBaseTheme">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">2dip</item>
@@ -35,20 +35,79 @@
         <item name="android:paddingLeft">1dip</item>
         <item name="android:paddingRight">1dip</item>
     </style>
-    
-     <!-- profile account text -->
+
+    <!-- profile account text -->
     <style name="AccountProfileText" parent="AppBaseTheme">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">0dip</item>
         <item name="android:textColor">#000000</item>
     </style>
-    
-     <!-- news/content rating  style -->
+
+    <!-- news/content rating  style -->
     <style name="contentRatingBar" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/custom_ratings</item>
         <item name="android:minHeight">22dip</item>
         <item name="android:maxHeight">10dip</item>
     </style>
+
+    <!-- trade market data button -->
+    <style name="marketDataButton" parent="AppBaseTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    
+    <!-- text row separator -->
+     <style name="textViewLineSeparator">
+         <item name="android:layout_width">fill_parent</item>
+         <item name="android:layout_height">0.5dp</item>
+         <item name="android:background">@color/light_gray</item>
+     </style>
+     
+     <!-- market data text view -->
+     <style name="marketDataTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+     <style name="marketDataTextView.Left">
+        <item name="android:layout_marginLeft">2dip</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingTop">1dip</item>
+         <item name="android:textColor">@color/app_gray</item>
+         <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="marketDataTextView.Right">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+         <item name="android:paddingRight">5dp</item>
+         <item name="android:gravity">center|right</item>
+         <item name="android:layout_alignParentRight">true</item>
+       <item name="android:textColor">@color/app_gray</item>
+        
+        <item name="android:textSize">14sp</item>
+         <item name="android:layout_marginRight">10dp</item>         
+    </style>
+    
+    <style name="marketDataTextView.Left.Value">
+         <item name="android:layout_marginLeft">2dp</item>
+         <item name="android:gravity">center_vertical|left</item>
+         <item name="android:layout_alignParentRight">false</item>
+         <item name="android:layout_marginRight">5dp</item>
+     </style>
 
 </resources>

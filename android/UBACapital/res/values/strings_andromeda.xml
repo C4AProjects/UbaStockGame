@@ -24,4 +24,44 @@
     <string name="contentPostTime">Yesterday @ 12:14 PM</string>
     <string name="newsPostContent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
 
-</resources>
+     <!-- trade market data -->
+    <string name="actionBuyLabel">Buy</string>
+    <string name="actionSellLabel">Sell</string>
+    <string name="stockItemName">7 UP BOTTLING COMP. PLC.</string>
+    <string name="symbolLabel">Symbol:%1$s</string>
+    <string name="previousCloseLabel">Previous Close:%1$s</string>
+    <string name="labelPreviousClose">PEVIOUS CLOSE</string>
+    <string name="previousCLoseValue">155.22</string>
+    <string name="weekLow">%1$sWK LOW</string>
+    <string name="weekLowValue">71.40</string>
+    <string name="weekHigh">%1$sWK HIGH</string>
+    <string name="weekHighValue">188.52</string>
+    <string name="labelTradeDate">Trade Date</string>
+    <string name="tradeDateValue">02 Dec, 2014</string>
+    <string name="labelTradeCurrency">Currency</string>
+    <string name="tradeCurrencyValue">NGN (NIARA)</string>
+    <string name="labelTradeLast">Last Trade</string>
+    <string name="tradeLastValue">29.00</string>
+    <string name="labelTradeVolume">Volume</string>
+    <string name="tradeVolumeValue">2,837,060</string>
+    <string name="labelTradeNetChange">Net Change</string>
+    <string name="tradeNetChangeValue">+0.95</string>
+    <string name="labelTradeValue">Value</string>
+    <string name="tradeValue">81,974,360.00</string>
+    <string name="labelTradePercentChange">% Change</string> 
+    <string name="tradePercentChange">+3.39</string>
+    <string name="labelTradeSharesOutstanding">Shares Outstanding</string>
+    <string name="tradeSharesOutstanding">3,970,477,045</string>
+    <string name="labelTradeOpen">Open</string>
+    <string name="tradeOpen">28.00</string>
+    <string name="labelTradeMarketCapital">Market Cap.</string>
+    <string name="tradeMarketCapital">115,143,834,305.00</string>
+    <string name="labelTradeTodaysHigh">Today\'s High</string>
+    <string name="tradeTodaysHigh">29.45</string>
+    <string name="labelTradeBestBid">Best Bid</string>
+    <string name="tradeBestBid">N/A</string>
+    <string name="labelTradeTodaysLow">Today\'s Low</string>
+    <string name="tradeTodaysLow">28.00</string>
+    <string name="labelTradeBestAskOffer">Best Ask/Offer</string>
+    <string name="tradeBestAskOffer">N/A</string>
+    </resources>
