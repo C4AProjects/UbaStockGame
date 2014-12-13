@@ -105,6 +105,7 @@ public final class R {
         public static final int facebookButton=0x7f090027;
         public static final int facebookContainer=0x7f090015;
         public static final int facebookSwitch=0x7f090016;
+        public static final int fragmentContainer=0x7f090000;
         public static final int icon_map_marker=0x7f090034;
         public static final int inputUserQuery=0x7f090002;
         public static final int label_account_balance=0x7f090037;
@@ -126,7 +127,6 @@ public final class R {
         public static final int news_rating=0x7f090009;
         public static final int other1OptionRowContainer=0x7f090019;
         public static final int other1SettingsLabel=0x7f09001a;
-        public static final int pager=0x7f090000;
         public static final int passwordEditText=0x7f090023;
         public static final int postTitle=0x7f090010;
         public static final int predictButton=0x7f090048;
@@ -175,74 +175,74 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int news_listing=0x7f030001;
-        public static final int news_listing_item=0x7f030002;
-        public static final int news_listing_item_details=0x7f030003;
-        public static final int settings_screen=0x7f030004;
-        public static final int sign_in_screen=0x7f030005;
-        public static final int sign_up_screen=0x7f030006;
-        public static final int trading_profile=0x7f030007;
-        public static final int trivia_screen=0x7f030008;
-        public static final int welcome_screen=0x7f030009;
+        public static final int activity_profile=0x7f030001;
+        public static final int news_listing=0x7f030002;
+        public static final int news_listing_item=0x7f030003;
+        public static final int news_listing_item_details=0x7f030004;
+        public static final int settings_screen=0x7f030005;
+        public static final int sign_in_screen=0x7f030006;
+        public static final int sign_up_screen=0x7f030007;
+        public static final int trading_profile=0x7f030008;
+        public static final int trivia_screen=0x7f030009;
+        public static final int welcome_screen=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int account_balance_value=0x7f060017;
-        public static final int account_ranking_value=0x7f06001b;
-        public static final int account_state_value=0x7f060019;
-        public static final int action_settings=0x7f060001;
+        public static final int account_balance_value=0x7f06001b;
+        public static final int account_ranking_value=0x7f06001f;
+        public static final int account_state_value=0x7f06001d;
+        public static final int action_settings=0x7f060002;
+        public static final int activity_profile=0x7f060001;
         /**  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SALAD THIEVES WORK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
          */
         public static final int app_name=0x7f060000;
-        public static final int comments_count=0x7f060021;
-        public static final int contentPostTime=0x7f060022;
-        /**  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx JOHN ADAMSY WORK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- common strings 
+        public static final int comments_count=0x7f060025;
+        public static final int contentPostTime=0x7f060026;
+        /**  common strings 
          */
-        public static final int default_content_description=0x7f060012;
-        public static final int emailInputHint=0x7f060005;
-        public static final int facebookButton=0x7f060007;
-        public static final int facebookSettingsLabel=0x7f060011;
-        public static final int genericContentDescription=0x7f060004;
+        public static final int default_content_description=0x7f060016;
+        public static final int emailInputHint=0x7f060006;
+        public static final int facebookButton=0x7f060008;
+        public static final int facebookSettingsLabel=0x7f060012;
+        public static final int genericContentDescription=0x7f060005;
         /**  news 
          */
-        public static final int hint_search=0x7f06001c;
-        public static final int label_account_balance=0x7f060016;
-        public static final int label_account_ranking=0x7f06001a;
-        public static final int label_account_state=0x7f060018;
-        public static final int label_details_news_title=0x7f06001f;
-        public static final int label_news_item_category=0x7f06001e;
-        public static final int label_profile_account_location=0x7f060015;
-        public static final int label_profile_account_type=0x7f060014;
+        public static final int hint_search=0x7f060020;
+        public static final int label_account_balance=0x7f06001a;
+        public static final int label_account_ranking=0x7f06001e;
+        public static final int label_account_state=0x7f06001c;
+        public static final int label_details_news_title=0x7f060023;
+        public static final int label_news_item_category=0x7f060022;
+        public static final int label_profile_account_location=0x7f060019;
+        public static final int label_profile_account_type=0x7f060018;
         /**  trading account profile 
          */
-        public static final int label_profile_name=0x7f060013;
-        public static final int likes_count=0x7f060020;
-        public static final int nameHint=0x7f060009;
-        public static final int nameTitleText=0x7f06000c;
-        public static final int newsPostContent=0x7f060023;
-        public static final int news_item_title=0x7f06001d;
-        public static final int other1Settings=0x7f060026;
-        public static final int other2OptionText=0x7f060027;
-        public static final int passwordInputHint=0x7f060006;
-        public static final int predictButton=0x7f060010;
-        public static final int quizSelectionText=0x7f06000d;
-        public static final int quizSubtitleText=0x7f06000e;
-        public static final int saveSettingsButton=0x7f060025;
-        public static final int signUpPasswordHint=0x7f06000a;
-        public static final int signUpRepeatPasswordHint=0x7f06000b;
-        public static final int sign_in_button=0x7f060002;
-        public static final int sign_up_button=0x7f060003;
-        public static final int tradeQuizButton=0x7f06000f;
-        public static final int twitterButton=0x7f060008;
-        public static final int twitterSettingsLabel=0x7f060024;
+        public static final int label_profile_name=0x7f060017;
+        public static final int likes_count=0x7f060024;
+        public static final int nameHint=0x7f06000a;
+        public static final int nameTitleText=0x7f06000d;
+        public static final int newsPostContent=0x7f060027;
+        public static final int news_item_title=0x7f060021;
+        public static final int other1Settings=0x7f060014;
+        public static final int passwordInputHint=0x7f060007;
+        public static final int predictButton=0x7f060011;
+        public static final int quizSelectionText=0x7f06000e;
+        public static final int quizSubtitleText=0x7f06000f;
+        public static final int saveSettingsButton=0x7f060015;
+        public static final int signUpPasswordHint=0x7f06000b;
+        public static final int signUpRepeatPasswordHint=0x7f06000c;
+        public static final int sign_in_button=0x7f060003;
+        public static final int sign_up_button=0x7f060004;
+        public static final int tradeQuizButton=0x7f060010;
+        public static final int twitterButton=0x7f060009;
+        public static final int twitterSettingsLabel=0x7f060013;
     }
     public static final class style {
         /**  profile account text 
          */
-        public static final int AccountProfileText=0x7f070016;
+        public static final int AccountProfileText=0x7f070018;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -265,48 +265,59 @@ public final class R {
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
-        public static final int button=0x7f07000b;
+        public static final int actionbar_style=0x7f070002;
+        public static final int actionbar_title_style=0x7f070003;
+        public static final int button=0x7f07000d;
         /**  green button style 
          */
-        public static final int button_green=0x7f07000c;
+        public static final int button_green=0x7f07000e;
         /**  red button style 
          */
-        public static final int button_red=0x7f07000d;
+        public static final int button_red=0x7f07000f;
         /**  news/content rating  style 
          */
-        public static final int contentRatingBar=0x7f070017;
-        public static final int edit_text=0x7f070005;
-        public static final int edit_text_password=0x7f070006;
-        public static final int layoutSeparator=0x7f070015;
-        /**  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx JOHN ADAMSY WORK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- Layout Custom Style 
+        public static final int contentRatingBar=0x7f070019;
+        public static final int edit_text=0x7f070007;
+        public static final int edit_text_password=0x7f070008;
+        public static final int layoutSeparator=0x7f070017;
+        /**  Layout Custom Style 
          */
-        public static final int layoutStyle=0x7f070014;
-        public static final int screen_input_container=0x7f070004;
-        public static final int screen_logo=0x7f070003;
+        public static final int layoutStyle=0x7f070016;
+        public static final int screen_input_container=0x7f070006;
+        public static final int screen_logo=0x7f070005;
         /**  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SALAD THIEVES WORK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  screen root style 
          */
-        public static final int screen_root=0x7f070002;
+        public static final int screen_root=0x7f070004;
         /**  settings screen 
          */
-        public static final int settings_row_container=0x7f070012;
+        public static final int settings_row_container=0x7f070014;
         /**  settings switch style 
          */
-        public static final int settings_row_switch=0x7f070013;
-        public static final int signup_button=0x7f07000a;
-        public static final int social_network_button=0x7f070007;
-        public static final int social_network_button_facebook=0x7f070008;
-        public static final int social_network_button_twitter=0x7f070009;
-        public static final int trivia_button=0x7f070011;
-        public static final int trivia_screen_label=0x7f07000e;
-        public static final int trivia_screen_label_subtitle=0x7f070010;
-        public static final int trivia_screen_label_title=0x7f07000f;
+        public static final int settings_row_switch=0x7f070015;
+        public static final int signup_button=0x7f07000c;
+        public static final int social_network_button=0x7f070009;
+        public static final int social_network_button_facebook=0x7f07000a;
+        public static final int social_network_button_twitter=0x7f07000b;
+        public static final int trivia_button=0x7f070013;
+        public static final int trivia_screen_label=0x7f070010;
+        public static final int trivia_screen_label_subtitle=0x7f070012;
+        public static final int trivia_screen_label_title=0x7f070011;
     }
 }
