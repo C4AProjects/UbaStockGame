@@ -5,6 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     
      <!-- text sizes -->
+    <dimen name="text_size_tiny">12sp</dimen>
     <dimen name="text_size_smaller">18sp</dimen>
     <dimen name="text_size_small">22sp</dimen>
     <dimen name="text_size_normal">28sp</dimen>

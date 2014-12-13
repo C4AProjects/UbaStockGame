@@ -23,4 +23,13 @@
     <string name="twitterSettingsLabel">Link With Twitter</string>
     <string name="other1Settings">Lorem Ipsum Dolor</string>
     <string name="saveSettingsButton">Save Settings</string>
+    
+    <!-- PROFILE ACTIVITY -->
+    <!-- tab labels -->
+    <string name="tab_label_portfolio">Portfolio</string>
+    <string name="tab_label_trivia">Trivia</string>
+    <string name="tab_label_trade">Trade</string>
+    <string name="tab_label_news">News</string>
+    <string name="tab_label_history">History</string>
+    
 </resources>
