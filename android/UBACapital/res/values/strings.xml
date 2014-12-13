@@ -18,5 +18,6 @@
     <string name="quizSubtitleText">Learn about investment and earn rewards towards trading</string>
     <string name="tradeQuizButton">Trade Quiz</string>
     <string name="predictButton">Predict Your Net Worth</string>
+    <string name="facebookSettingsLabel">Link With Facebook</string>
 
 </resources>

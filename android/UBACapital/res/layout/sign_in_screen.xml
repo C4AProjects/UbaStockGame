@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/screen_root" >
+
+    <ImageView
+        android:id="@+id/sign_in_logo"
+        style="@style/screen_logo"
+        android:contentDescription="@string/genericContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_container"
+        style="@style/screen_input_container"
+        android:layout_below="@+id/sign_in_logo" >
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/edit_text"
+            android:hint="@string/emailInputHint"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            style="@style/edit_text"
+            android:hint="@string/passwordInputHint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/signInButton"
+            style="@style/signup_button"
+            android:text="@string/sign_in_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@style/social_network_button.facebook"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/twitterButton"
+            style="@style/social_network_button.twitter"
+            android:text="@string/facebookButton" />
+
+        <Button
+            android:id="@+id/facebookButton"
+            style="@style/social_network_button.facebook"
+            android:text="@string/twitterButton" />
+    </LinearLayout>
+
+</RelativeLayout>

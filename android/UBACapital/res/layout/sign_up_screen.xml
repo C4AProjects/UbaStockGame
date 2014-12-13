@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/screen_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/signUpScreenLogo"
+        style="@style/screen_logo"
+        android:contentDescription="@string/genericContentDescription"
+        android:src="@drawable/screen_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpScreenLogo"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/signUpNameEditText"
+                style="@style/edit_text"
+                android:hint="@string/nameHint"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/signUpEmailEditText"
+                style="@style/edit_text"
+                android:hint="@string/emailInputHint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/signUppasswordEditText"
+                style="@style/edit_text"
+                android:hint="@string/signUpPasswordHint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/signUpRepeatPasswordEditText"
+                style="@style/edit_text"
+                android:hint="@string/signUpRepeatPasswordHint"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                style="@style/signup_button"
+                android:text="@string/sign_up_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

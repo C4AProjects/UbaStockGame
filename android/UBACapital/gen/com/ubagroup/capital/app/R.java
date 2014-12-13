@@ -23,6 +23,7 @@ public final class R {
         public static final int light_green=0x7f040008;
         public static final int light_red=0x7f040002;
         public static final int red=0x7f040001;
+        public static final int sky_blue=0x7f04000e;
         public static final int white=0x7f040009;
         public static final int yellow=0x7f04000d;
     }
@@ -77,41 +78,46 @@ public final class R {
         public static final int trivia_screen_image=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001b;
-        public static final int buttonContainer=0x7f090018;
-        public static final int emailEditText=0x7f090003;
-        public static final int facebookButton=0x7f090008;
-        public static final int nameTitleTextView=0x7f090011;
+        public static final int action_settings=0x7f09001f;
+        public static final int buttonContainer=0x7f09001c;
+        public static final int emailEditText=0x7f090007;
+        public static final int facebookButton=0x7f09000c;
+        public static final int facebookContainer=0x7f090002;
+        public static final int facebookLabel=0x7f090003;
+        public static final int nameTitleTextView=0x7f090015;
         public static final int pager=0x7f090000;
-        public static final int passwordEditText=0x7f090004;
-        public static final int predictButton=0x7f090016;
-        public static final int quizSelectionTextView=0x7f090014;
-        public static final int quizZelectionSubtitle=0x7f090013;
-        public static final int signInButton=0x7f090005;
-        public static final int signUpButton=0x7f09000e;
-        public static final int signUpEmailEditText=0x7f09000b;
-        public static final int signUpNameEditText=0x7f09000a;
-        public static final int signUpRepeatPasswordEditText=0x7f09000d;
-        public static final int signUpScreenLogo=0x7f090009;
-        public static final int signUppasswordEditText=0x7f09000c;
-        public static final int sign_in_container=0x7f090002;
-        public static final int sign_in_logo=0x7f090001;
-        public static final int socialButtonContainer=0x7f090006;
-        public static final int tradeQuizButton=0x7f090015;
-        public static final int triviaInfoContainer=0x7f090010;
-        public static final int triviaScreenLogo=0x7f09000f;
-        public static final int triviaSscreenImageView=0x7f090012;
-        public static final int twitterButton=0x7f090007;
-        public static final int welcomeSignInButton=0x7f090019;
-        public static final int welcomeSignUpButton=0x7f09001a;
-        public static final int welcome_screen_logo=0x7f090017;
+        public static final int passwordEditText=0x7f090008;
+        public static final int predictButton=0x7f09001a;
+        public static final int quizSelectionTextView=0x7f090018;
+        public static final int quizZelectionSubtitle=0x7f090017;
+        public static final int settingRowContainer=0x7f090001;
+        public static final int signInButton=0x7f090009;
+        public static final int signUpButton=0x7f090012;
+        public static final int signUpEmailEditText=0x7f09000f;
+        public static final int signUpNameEditText=0x7f09000e;
+        public static final int signUpRepeatPasswordEditText=0x7f090011;
+        public static final int signUpScreenLogo=0x7f09000d;
+        public static final int signUppasswordEditText=0x7f090010;
+        public static final int sign_in_container=0x7f090006;
+        public static final int sign_in_logo=0x7f090005;
+        public static final int socialButtonContainer=0x7f09000a;
+        public static final int switch1=0x7f090004;
+        public static final int tradeQuizButton=0x7f090019;
+        public static final int triviaInfoContainer=0x7f090014;
+        public static final int triviaScreenLogo=0x7f090013;
+        public static final int triviaSscreenImageView=0x7f090016;
+        public static final int twitterButton=0x7f09000b;
+        public static final int welcomeSignInButton=0x7f09001d;
+        public static final int welcomeSignUpButton=0x7f09001e;
+        public static final int welcome_screen_logo=0x7f09001b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int sign_in_screen=0x7f030001;
-        public static final int sign_up_screen=0x7f030002;
-        public static final int trivia_screen=0x7f030003;
-        public static final int welcome_screen=0x7f030004;
+        public static final int settings_screen=0x7f030001;
+        public static final int sign_in_screen=0x7f030002;
+        public static final int sign_up_screen=0x7f030003;
+        public static final int trivia_screen=0x7f030004;
+        public static final int welcome_screen=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -121,6 +127,7 @@ public final class R {
         public static final int app_name=0x7f060000;
         public static final int emailInputHint=0x7f060005;
         public static final int facebookButton=0x7f060007;
+        public static final int facebookSettingsLabel=0x7f060011;
         public static final int genericContentDescription=0x7f060004;
         public static final int nameHint=0x7f060009;
         public static final int nameTitleText=0x7f06000c;
