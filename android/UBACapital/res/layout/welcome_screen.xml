@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/screen_root" >
+
+    <ImageView
+        android:id="@+id/welcome_screen_logo"
+        style="@style/screen_logo"
+        android:contentDescription="@string/genericContentDescription"/>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        style="@style/screen_input_container" >
+        
+        <Button
+            android:id="@+id/welcomeSignInButton"
+            style="@style/button.green"
+            android:text="@string/sign_in_button" />
+
+        <Button
+            android:id="@+id/welcomeSignUpButton"
+            style="@style/button.red"
+            android:text="@string/sign_up_button" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

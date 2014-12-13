@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue" >
+
+    <LinearLayout
+        android:id="@+id/settingRowContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/facebookContainer"
+            style="@style/settings_row_container" >
+
+            <Switch
+                android:id="@+id/facebookSwitch"
+                style="@style/settings_row_switch"
+                android:text="@string/facebookSettingsLabel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/twitterContainer"
+            style="@style/settings_row_container" >
+
+            <Switch
+                android:id="@+id/twitteSwitch"
+                style="@style/settings_row_switch"
+                android:text="@string/twitterSettingsLabel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/other1OptionRowContainer"
+            style="@style/settings_row_container"
+            android:layout_width="match_parent" >
+
+            <TextView
+                android:id="@+id/other1SettingsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dimen_tiny4"
+                android:layout_marginLeft="@dimen/dimen_tiny2"
+                android:layout_marginTop="@dimen/dimen_tiny4"
+                android:text="@string/other1Settings"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <ImageView
+                android:id="@+id/settingsArrowIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/default_content_description"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            style="@style/settings_row_container"
+            android:layout_width="match_parent" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dimen_tiny4"
+                android:layout_marginLeft="@dimen/dimen_tiny2"
+                android:layout_marginTop="@dimen/dimen_tiny4"
+                android:text="@string/other2OptionText"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/default_content_description"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_small4"
+        android:background="@drawable/button_background_red"
+        android:text="@string/saveSettingsButton"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

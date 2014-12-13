@@ -2,34 +2,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#ffffff" >
-   
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
     <!-- background top -->
-		<FrameLayout
-            android:id="@+id/content_frame"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_nse" >
-       
-         <!-- Invest now logo -->
-        <ImageView
-        android:id="@+id/ubacapital_logo"
-        android:layout_width="fill_parent"
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dip"
-        android:background="@android:color/transparent"
-        android:src="@drawable/ic_investnow" 
-        android:contentDescription="@string/default_content_description"
-        />
+        android:background="@drawable/bg_nse" >
+
+        <!-- Invest now logo -->
+
+        <ImageView
+            android:id="@+id/ubacapital_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/default_content_description"
+            android:src="@drawable/screen_logo" />
 
         <!-- trading profile name and location -->
+
         <RelativeLayout
             android:id="@+id/profile_info_holder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="bottom"
+            android:orientation="horizontal"
             android:padding="5dip" >
 
             <TextView
@@ -74,16 +76,16 @@
                 android:contentDescription="@string/default_content_description"
                 android:src="@drawable/ic_marker" />
         </RelativeLayout>
-        
-        </FrameLayout>
-        
-		<!-- trading account stats -->
-		<LinearLayout
+    </FrameLayout>
+
+    <!-- trading account stats -->
+
+    <LinearLayout
         android:id="@+id/layout_account_breakdown"
         style="@style/layoutStyle"
-        android:layout_below="@+id/content_frame"
         android:layout_width="fill_parent"
         android:layout_height="52dip"
+        android:layout_below="@+id/content_frame"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -96,9 +98,9 @@
             <TextView
                 android:id="@+id/label_account_balance"
                 style="@style/AccountProfileText"
-                android:textSize="14sp"
                 android:gravity="center_horizontal"
-                android:text="@string/label_account_balance" />
+                android:text="@string/label_account_balance"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/label_account_balance_value"
@@ -108,11 +110,11 @@
                 android:gravity="center_horizontal"
                 android:text="@string/account_balance_value" />
         </LinearLayout>
-        
-         <View
+
+        <View
             android:id="@+id/separator_one"
             style="@style/layoutSeparator" />
-        
+
         <LinearLayout
             android:id="@+id/linearLayoutAccountState"
             android:layout_width="0dp"
@@ -123,25 +125,25 @@
             <TextView
                 android:id="@+id/label_account_state"
                 style="@style/AccountProfileText"
-                android:textSize="14sp"
                 android:gravity="center_horizontal"
-                android:text="@string/label_account_state" />
+                android:text="@string/label_account_state"
+                android:textSize="14sp" />
 
-          <TextView
+            <TextView
                 android:id="@+id/label_account_state_value"
                 style="@style/AccountProfileText"
-                android:textColor="#01ff00"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="2dip"
                 android:gravity="center_horizontal"
-                android:text="@string/account_state_value" />
+                android:text="@string/account_state_value"
+                android:textColor="#01ff00" />
         </LinearLayout>
-        
+
         <View
             android:id="@+id/separator_two"
             style="@style/layoutSeparator" />
-        
-         <LinearLayout
+
+        <LinearLayout
             android:id="@+id/linearLayoutAccountRanking"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -151,11 +153,11 @@
             <TextView
                 android:id="@+id/label_account_ranking"
                 style="@style/AccountProfileText"
-                android:textSize="14sp"
                 android:gravity="center_horizontal"
-                android:text="@string/label_account_ranking" />
+                android:text="@string/label_account_ranking"
+                android:textSize="14sp" />
 
-          <TextView
+            <TextView
                 android:id="@+id/label_account_ranking_value"
                 style="@style/AccountProfileText"
                 android:layout_gravity="bottom"
@@ -163,11 +165,6 @@
                 android:gravity="center_horizontal"
                 android:text="@string/account_ranking_value" />
         </LinearLayout>
-
-        
     </LinearLayout>
-        
-		
-        
-       
+
 </RelativeLayout>

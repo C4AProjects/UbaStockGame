@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SALAD THIEVES WORK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <string name="app_name">UBACapital</string>
     <string name="action_settings">Settings</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="genericContentDescription">Generic stuff</string>
+    <string name="emailInputHint">Email</string>
+    <string name="passwordInputHint">***********</string>
+    <string name="facebookButton">Facebook</string>
+    <string name="twitterButton">Twitter</string>
+    <string name="nameHint">Your Name</string>
+    <string name="signUpPasswordHint">Password</string>
+    <string name="signUpRepeatPasswordHint">Repeat password</string>
+    <string name="nameTitleText">Hi, I am Professor Invest!</string>
+    <string name="quizSelectionText">Choose a quiz from below:</string>
+    <string name="quizSubtitleText">Learn about investment and earn rewards towards trading</string>
+    <string name="tradeQuizButton">Trade Quiz</string>
+    <string name="predictButton">Predict Your Net Worth</string>
+    <string name="facebookSettingsLabel">Link With Facebook</string>
 </resources>
