@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- references: http://mobile.cs.fsu.edu/ever-wonder-how-to-make-rounded-corners-for-your-edittext -->
+<item android:state_pressed="true">
+    <shape>
+<!-- HERE, you have where you add borders -->
+ <gradient 
+            android:startColor="#ee4c41"
+            android:centerColor="#ee4c41"
+            android:endColor="#ee4c41"
+            android:angle="270"
+        />
+         <corners
+            android:radius="0dp" />
+    </shape>
+</item>
+
+<item android:state_pressed="false">
+    <shape>
+        <corners
+            android:radius="0dp" />
+         <gradient 
+            android:startColor="#f7f8fa"
+            android:centerColor="#f7f8fa"
+            android:endColor="#f7f8fa"
+            android:angle="270"
+        />                          
+    </shape>
+</item>
+
+</selector>

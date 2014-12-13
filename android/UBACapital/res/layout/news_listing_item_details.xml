@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewEditProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:background="#e0e4e5" />
+
+    <ImageView
+        android:id="@+id/mainItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="400dip"
+        android:src="@drawable/news_item_image"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:clickable="false"
+        android:focusable="false" >
+        
+      <RelativeLayout
+            android:id="@+id/relativeIcons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" >
+		
+            
+            <TextView
+                android:id="@+id/textAddCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/textComments"
+               
+                android:clickable="true"
+                android:drawableLeft="@drawable/favorite_16"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="@string/likes_count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#bcc1c5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+               
+                android:clickable="true"
+                android:drawableLeft="@drawable/comments_bubble_16"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:text="@string/comments_count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#bcc1c5"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeIcons"
+            android:layout_marginLeft="8dp" >
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dip"
+                android:text="@string/label_details_news_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="17sp" />
+            
+             <TextView
+                android:id="@+id/contentPostTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/postTitle"
+                android:layout_marginTop="3dip"
+                android:text="@string/contentPostTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#bcc1c5"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativePricing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeDesc"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="8dp"
+             >
+
+            <TextView
+                android:id="@+id/textItemAmountDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/newsPostContent"
+                android:textAlignment="inherit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#64717a"
+                android:textSize="15sp" />
+            
+        </RelativeLayout>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
