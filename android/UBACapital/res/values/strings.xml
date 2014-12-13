@@ -3,29 +3,4 @@
 
     <string name="app_name">UBACapital</string>
     <string name="action_settings">Settings</string>
-    
-    <!-- common strings -->
-    <string name="default_content_description">Content Descrption</string>
-    
-    <!-- trading account profile -->
-    <string name="label_profile_name">Segun Johnnson</string>
-    <string name="label_profile_account_type">Trading Account</string>
-    <string name="label_profile_account_location">Lagos, Nigeria</string>
-    <string name="label_account_balance">Account Balance</string>
-    <string name="account_balance_value">N100,000</string>
-    <string name="label_account_state">Gains/Losses</string>
-    <string name="account_state_value">+25,000</string>
-    <string name="label_account_ranking">Ranking</string>
-    <string name="account_ranking_value">1000</string>
-    
-    <!-- news -->
-    <string name="hint_search">Search&#8230;</string>
-    <string name="news_item_title">NASDAQ</string>
-    <string name="label_news_item_category">Category</string>
-    <string name="label_details_news_title">Blog Post Title</string>
-    <string name="likes_count">23</string>
-    <string name="comments_count">4</string>
-    <string name="contentPostTime">Yesterday @ 12:14 PM</string>
-    <string name="newsPostContent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
-
 </resources>
