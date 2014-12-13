@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue" >
+
+    <LinearLayout
+        android:id="@+id/settingRowContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/facebookContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_white"
+            android:paddingBottom="@dimen/dimen_small2"
+            android:paddingLeft="@dimen/dimen_small1"
+            android:paddingRight="@dimen/dimen_small1"
+            android:paddingTop="@dimen/dimen_small2" >
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/facebookLabel"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
