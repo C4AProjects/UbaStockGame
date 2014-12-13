@@ -19,4 +19,7 @@
     <string name="tradeQuizButton">Trade Quiz</string>
     <string name="predictButton">Predict Your Net Worth</string>
     <string name="facebookSettingsLabel">Link With Facebook</string>
+    <string name="twitterSettingsLabel">Link With Twitter</string>
+    <string name="other1Settings">Lorem Ipsum Dolor</string>
+    <string name="saveSettingsButton">Save Settings</string>
 </resources>
