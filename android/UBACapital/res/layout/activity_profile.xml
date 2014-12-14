@@ -8,6 +8,86 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabContainer" />
+
+    <LinearLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab_container_portfolio"
+            style="@style/tab_item_container" >
+
+            <ImageView
+                style="@style/tab_item_image"
+                android:contentDescription="@string/genericContentDescription"
+                android:src="@drawable/tab_icon_portfolio_inactive" />
+
+            <TextView
+                style="@style/tab_item_label.inactive"
+                android:text="@string/tab_label_portfolio" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_container_trivia"
+            style="@style/tab_item_container" >
+
+            <ImageView
+                style="@style/tab_item_image"
+                android:contentDescription="@string/genericContentDescription"
+                android:src="@drawable/tab_icon_trivia_inacitve" />
+
+            <TextView
+                style="@style/tab_item_label.inactive"
+                android:text="@string/tab_label_trivia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_container_trade"
+            style="@style/tab_item_container" >
+
+            <ImageView
+                style="@style/tab_item_image"
+                android:contentDescription="@string/genericContentDescription"
+                android:src="@drawable/tab_icon_trade_inacitve" />
+
+            <TextView
+                style="@style/tab_item_label.inactive"
+                android:text="@string/tab_label_trade" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_container_news"
+            style="@style/tab_item_container" >
+
+            <ImageView
+                style="@style/tab_item_image"
+                android:contentDescription="@string/genericContentDescription"
+                android:src="@drawable/tab_icon_news_inacitve" />
+
+            <TextView
+                style="@style/tab_item_label.inactive"
+                android:text="@string/tab_label_news" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_container_history"
+            style="@style/tab_item_container" >
+
+            <ImageView
+                style="@style/tab_item_image"
+                android:contentDescription="@string/genericContentDescription"
+                android:src="@drawable/tab_icon_history_inacitve" />
+
+            <TextView
+                style="@style/tab_item_label.inactive"
+                android:text="@string/tab_label_history" />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

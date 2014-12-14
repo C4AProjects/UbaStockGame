@@ -10,17 +10,17 @@
         android:layout_height="match_parent"
         android:gravity="top"
         android:orientation="vertical" >
-        
+
         <!-- top part -->
+
         <RelativeLayout
             android:id="@+id/relativeTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#e9f3f4"
-            android:padding="5dip"
-             >
-		
-              <TextView
+            android:padding="5dip" >
+
+            <TextView
                 android:id="@+id/stockItemName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -31,36 +31,32 @@
                 android:text="@string/stockItemName"
                 android:textAllCaps="true"
                 android:textSize="15sp" />
-            
+
             <TextView
                 android:id="@+id/actionBuy"
+                style="@style/marketDataButton"
                 android:layout_marginRight="2dp"
                 android:layout_toLeftOf="@+id/actionSell"
-                style="@style/marketDataButton"
-              
-                android:text="@string/actionBuyLabel"
-                 />
+                android:text="@string/actionBuyLabel" />
 
             <TextView
                 android:id="@+id/actionSell"
                 style="@style/marketDataButton"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="5dp"
-                android:text="@string/actionSellLabel"
-                />
-
+                android:text="@string/actionSellLabel" />
         </RelativeLayout>
-        
+
         <!-- second part -->
+
         <RelativeLayout
             android:id="@+id/relativeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/black"
-            android:padding="5dip"
-             >
-		
-              <TextView
+            android:padding="5dip" >
+
+            <TextView
                 android:id="@+id/previousCloseLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,147 +65,143 @@
                 android:text="@string/previousCloseLabel"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
-         
+
             <TextView
                 android:id="@+id/symbolLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:textColor="@color/white"
                 android:layout_alignParentRight="true"
                 android:text="@string/symbolLabel"
-                />
-
+                android:textColor="@color/white"
+                android:textSize="15sp" />
         </RelativeLayout>
-        
+
         <!-- the graph view will go here -->
+
         <LinearLayout
-        android:id="@+id/layoutGraphHolder"
-        style="@style/layoutStyle"
-        android:layout_margin="0dip"
-        android:layout_width="fill_parent"
-        android:layout_height="200dip"
-        android:layout_below="@+id/relativeName"
-        android:orientation="horizontal"
-        android:background="#d5e9eb" >
-          
-          
-          
-        </LinearLayout>
-        
-        <LinearLayout
-        android:id="@+id/layoutStockStats"
-        style="@style/layoutStyle"
-        android:background="@color/white"
-        android:layout_width="fill_parent"
-        android:layout_height="70dip"
-        android:layout_below="@+id/layoutGraphHolder"
-        android:orientation="horizontal" >
-
-        <!-- previous -->
-        <LinearLayout
-            android:id="@+id/linearLayoutPrevious"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:orientation="vertical" >
-            
-            <ImageView
-                android:id="@+id/iconPrevious"
-                android:layout_width="fill_parent"
-                android:layout_height="30dip"
-                android:src="@drawable/previous_close"
-                android:gravity="center_vertical"
-                 />
-
-            <TextView
-                android:id="@+id/labelPreviousClose"
-                style="@style/AccountProfileText"
-                android:textColor="@color/light_gray"
-                android:gravity="center_horizontal"
-                android:text="@string/labelPreviousClose"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/previousCLoseValue"
-                style="@style/AccountProfileText"
-                android:textColor="#51c5d4"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="2dip"
-                android:gravity="center_horizontal"
-                android:text="@string/previousCLoseValue" />
-        </LinearLayout>
-        
-         <!-- weeks low -->
-        <LinearLayout
-            android:id="@+id/linearLayoutLow"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:orientation="vertical" >
-            
-            <ImageView
-                android:id="@+id/iconLow"
-                android:layout_width="fill_parent"
-                android:layout_height="30dip"
-                android:src="@drawable/weeks_low"
-                android:gravity="center_vertical"
-                 />
-
-            <TextView
-                android:id="@+id/weekLow"
-                style="@style/AccountProfileText"
-                android:textColor="@color/light_gray"
-                android:gravity="center_horizontal"
-                android:text="@string/weekLow"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/weekLowValue"
-                style="@style/AccountProfileText"
-                android:textColor="#51c5d4"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="2dip"
-                android:gravity="center_horizontal"
-                android:text="@string/weekLowValue" />
-        </LinearLayout>
-        
-         <!-- weeks high -->
-        <LinearLayout
-            android:id="@+id/linearLayoutHigh"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:orientation="vertical" >
-            
-            <ImageView
-                android:id="@+id/iconHigh"
-                android:layout_width="fill_parent"
-                android:layout_height="30dip"
-                android:src="@drawable/weeks_high"
-                 />
-
-            <TextView
-                android:id="@+id/weekHigh"
-                style="@style/AccountProfileText"
-                android:textColor="@color/light_gray"
-                android:gravity="center_horizontal"
-                android:text="@string/weekHigh"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/weekHighValue"
-                style="@style/AccountProfileText"
-                android:textColor="#51c5d4"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="2dip"
-                android:gravity="center_horizontal"
-                android:text="@string/weekHighValue" />
+            android:id="@+id/layoutGraphHolder"
+            style="@style/layoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:layout_below="@+id/relativeName"
+            android:layout_margin="0dip"
+            android:background="#d5e9eb"
+            android:orientation="horizontal" >
         </LinearLayout>
 
-    </LinearLayout>
-    
+        <LinearLayout
+            android:id="@+id/layoutStockStats"
+            style="@style/layoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_below="@+id/layoutGraphHolder"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <!-- previous -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPrevious"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iconPrevious"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/previous_close" />
+
+                <TextView
+                    android:id="@+id/labelPreviousClose"
+                    style="@style/AccountProfileText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/labelPreviousClose"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/previousCLoseValue"
+                    style="@style/AccountProfileText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/previousCLoseValue"
+                    android:textColor="#51c5d4" />
+            </LinearLayout>
+
+            <!-- weeks low -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iconLow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/weeks_low" />
+
+                <TextView
+                    android:id="@+id/weekLow"
+                    style="@style/AccountProfileText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weekLow"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/weekLowValue"
+                    style="@style/AccountProfileText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weekLowValue"
+                    android:textColor="#51c5d4" />
+            </LinearLayout>
+
+            <!-- weeks high -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHigh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iconHigh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:src="@drawable/weeks_high" />
+
+                <TextView
+                    android:id="@+id/weekHigh"
+                    style="@style/AccountProfileText"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weekHigh"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/weekHighValue"
+                    style="@style/AccountProfileText"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weekHighValue"
+                    android:textColor="#51c5d4" />
+            </LinearLayout>
+        </LinearLayout>
+
         <!-- detailed market lower part -->
+
         <RelativeLayout
             android:id="@+id/settingsLayoutMarketDataInfo"
             android:layout_width="fill_parent"
@@ -229,7 +221,7 @@
                 style="@style/marketDataTextView.Left"
                 android:text="@string/labelTradeDate" />
 
-            <!-- date value-->
+            <!-- date value -->
 
             <TextView
                 android:id="@+id/tradeDateValue"
@@ -238,14 +230,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="82dp"
                 android:text="@string/tradeDateValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator1"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/labelTradeDate" />
-            
+
             <!-- currency -->
 
             <TextView
@@ -254,7 +246,7 @@
                 android:layout_below="@+id/separator1"
                 android:text="@string/labelTradeCurrency" />
 
-            <!-- currency value-->
+            <!-- currency value -->
 
             <TextView
                 android:id="@+id/tradeCurrencyValue"
@@ -263,15 +255,15 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/separator1"
                 android:text="@string/tradeCurrencyValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator2"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/labelTradeCurrency" />
-            
-             <!-- last trade -->
+
+            <!-- last trade -->
 
             <TextView
                 android:id="@+id/labelTradeLast"
@@ -279,7 +271,7 @@
                 android:layout_below="@+id/separator2"
                 android:text="@string/labelTradeLast" />
 
-            <!-- last trade value-->
+            <!-- last trade value -->
 
             <TextView
                 android:id="@+id/tradeLastValue"
@@ -288,15 +280,15 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator2"
                 android:text="@string/tradeLastValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator3"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeLastValue" />
-            
-             <!-- trade volume -->
+
+            <!-- trade volume -->
 
             <TextView
                 android:id="@+id/labelTradeVolume"
@@ -304,7 +296,7 @@
                 android:layout_below="@+id/separator3"
                 android:text="@string/labelTradeVolume" />
 
-            <!-- trade vol value-->
+            <!-- trade vol value -->
 
             <TextView
                 android:id="@+id/tradeVolumeValue"
@@ -313,14 +305,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator3"
                 android:text="@string/tradeVolumeValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator4"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeVolumeValue" />
-            
+
             <!-- net change -->
 
             <TextView
@@ -329,7 +321,7 @@
                 android:layout_below="@+id/separator4"
                 android:text="@string/labelTradeNetChange" />
 
-            <!-- net change value-->
+            <!-- net change value -->
 
             <TextView
                 android:id="@+id/tradeNetChangeValue"
@@ -338,14 +330,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator4"
                 android:text="@string/tradeNetChangeValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator5"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeNetChangeValue" />
-            
+
             <!-- label trade value -->
 
             <TextView
@@ -354,7 +346,7 @@
                 android:layout_below="@+id/separator5"
                 android:text="@string/labelTradeValue" />
 
-            <!-- trade value-->
+            <!-- trade value -->
 
             <TextView
                 android:id="@+id/tradeValue"
@@ -363,14 +355,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator5"
                 android:text="@string/tradeValue" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator6"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/labelTradeValue" />
-            
+
             <!-- label % change -->
 
             <TextView
@@ -379,7 +371,7 @@
                 android:layout_below="@+id/separator6"
                 android:text="@string/labelTradePercentChange" />
 
-            <!-- % change value-->
+            <!-- % change value -->
 
             <TextView
                 android:id="@+id/tradePercentChange"
@@ -388,14 +380,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator6"
                 android:text="@string/tradePercentChange" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator7"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradePercentChange" />
-            
+
             <!-- label shares outstanding -->
 
             <TextView
@@ -404,7 +396,7 @@
                 android:layout_below="@+id/separator7"
                 android:text="@string/labelTradeSharesOutstanding" />
 
-            <!-- shares outstanding value-->
+            <!-- shares outstanding value -->
 
             <TextView
                 android:id="@+id/tradeSharesOutstanding"
@@ -413,14 +405,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator7"
                 android:text="@string/tradeSharesOutstanding" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator8"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeSharesOutstanding" />
-            
+
             <!-- label open -->
 
             <TextView
@@ -429,7 +421,7 @@
                 android:layout_below="@+id/separator8"
                 android:text="@string/labelTradeOpen" />
 
-            <!-- shares outstanding value-->
+            <!-- shares outstanding value -->
 
             <TextView
                 android:id="@+id/tradeOpen"
@@ -438,14 +430,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator8"
                 android:text="@string/tradeOpen" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator9"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeOpen" />
-            
+
             <!-- label market cap. -->
 
             <TextView
@@ -454,7 +446,7 @@
                 android:layout_below="@+id/separator9"
                 android:text="@string/labelTradeMarketCapital" />
 
-            <!-- market cap. value-->
+            <!-- market cap. value -->
 
             <TextView
                 android:id="@+id/tradeMarketCapital"
@@ -463,14 +455,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator9"
                 android:text="@string/tradeMarketCapital" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator10"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeMarketCapital" />
-            
+
             <!-- label today's high -->
 
             <TextView
@@ -479,7 +471,7 @@
                 android:layout_below="@+id/separator10"
                 android:text="@string/labelTradeTodaysHigh" />
 
-            <!-- today's high value-->
+            <!-- today's high value -->
 
             <TextView
                 android:id="@+id/tradeTodaysHigh"
@@ -488,14 +480,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator10"
                 android:text="@string/tradeTodaysHigh" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator11"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeTodaysHigh" />
-            
+
             <!-- label best bid -->
 
             <TextView
@@ -504,7 +496,7 @@
                 android:layout_below="@+id/separator11"
                 android:text="@string/labelTradeBestBid" />
 
-            <!-- best bid value-->
+            <!-- best bid value -->
 
             <TextView
                 android:id="@+id/tradeBestBid"
@@ -513,15 +505,15 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator11"
                 android:text="@string/tradeBestBid" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator12"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeBestBid" />
-            
-            <!-- label today's low-->
+
+            <!-- label today's low -->
 
             <TextView
                 android:id="@+id/labelTradeTodaysLow"
@@ -529,7 +521,7 @@
                 android:layout_below="@+id/separator12"
                 android:text="@string/labelTradeTodaysLow" />
 
-            <!-- today's low value-->
+            <!-- today's low value -->
 
             <TextView
                 android:id="@+id/tradeTodaysLow"
@@ -538,15 +530,15 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator12"
                 android:text="@string/tradeTodaysLow" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator13"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeTodaysLow" />
-            
-            <!-- label best ask/offer-->
+
+            <!-- label best ask/offer -->
 
             <TextView
                 android:id="@+id/labelTradeBestAskOffer"
@@ -554,7 +546,7 @@
                 android:layout_below="@+id/separator13"
                 android:text="@string/labelTradeBestAskOffer" />
 
-            <!-- best ask/offer value-->
+            <!-- best ask/offer value -->
 
             <TextView
                 android:id="@+id/tradeBestAskOffer"
@@ -563,20 +555,14 @@
                 android:layout_alignRight="@+id/tradeCurrencyValue"
                 android:layout_below="@+id/separator13"
                 android:text="@string/tradeBestAskOffer" />
-            
-             <!-- the vertical line separator -->
+
+            <!-- the vertical line separator -->
 
             <View
                 android:id="@+id/separator14"
                 style="@style/textViewLineSeparator"
                 android:layout_below="@+id/tradeBestAskOffer" />
-            
-           
         </RelativeLayout>
-    
     </LinearLayout>
-        
-    
-    
-    
-        </ScrollView>
+
+</ScrollView>

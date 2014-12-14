@@ -139,7 +139,7 @@
     <style name="settings_row_container">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/button_background_white</item>
+        <item name="android:background">@drawable/settings_item_background</item>
         <item name="android:paddingBottom">@dimen/dimen_small2</item>
         <item name="android:paddingTop">@dimen/dimen_small2</item>
         <item name="android:paddingRight">@dimen/dimen_small1</item>
@@ -153,5 +153,37 @@
         <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/text_size_smaller</item>
     </style>
-
+    
+    <!-- tab item container style -->
+    <style name="tab_item_container">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dimen_tiny4</item>
+    </style>
+    
+    <!-- tab item image style -->
+    <style name="tab_item_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+    <!-- tab item label -->
+    <style name="tab_item_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- tab item active label -->
+    <style name="tab_item_label.active">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- tab item inactive label -->
+    <style name="tab_item_label.inactive">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    
 </resources>
