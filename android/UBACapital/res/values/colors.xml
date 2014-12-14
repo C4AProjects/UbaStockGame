@@ -17,4 +17,5 @@
     <color name="yellow">#F3D748</color>
     <color name="sky_blue">#CAE2E4</color>
     <color name="app_gray">#9B9EA0</color>
+    <color name="button_gray">#555555</color>
 </resources>

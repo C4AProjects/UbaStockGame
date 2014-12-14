@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#d5e9eb"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+
+    <!-- stock item details label -->
+
+    <RelativeLayout
+        android:id="@+id/relativeStockDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/previousCloseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/previousCloseLabel"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/symbolLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/symbolLabel"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    
+
+        <!-- Order Review Label -->
+
+        <TextView
+            android:id="@+id/labelTradeOrderReview"
+            style="@style/marketDataTextView.Left"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relativeStockDetails"
+            android:gravity="center_vertical|center"
+            android:text="@string/labelTradeOrderReview"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    
+      <ScrollView
+        android:id="@+id/scrollViewOrderReviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="240dip"
+        android:layout_below="@+id/labelTradeOrderReview"
+         >
+        <!-- detailed market lower part -->
+
+       <RelativeLayout
+            android:id="@+id/settingsLayoutMarketDataInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="2dp" >
+            
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator"
+                style="@style/textViewLineSeparator"
+                 />
+
+            <!-- account label -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewAccount"
+                style="@style/marketDataTextView.Left"
+                android:text="@string/labelOrderReviewAccount"
+                android:layout_below="@+id/separator" />
+
+            <!-- account value -->
+
+            <TextView
+                android:id="@+id/orderReviewAccount"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="82dp"
+                android:layout_below="@+id/separator"
+                android:text="@string/orderReviewAccount" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator1"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/labelOrderReviewAccount" />
+
+            <!-- action-->
+
+            <TextView
+                android:id="@+id/labelOrderReviewAction"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator1"
+                android:text="@string/labelOrderReviewAction" />
+
+            <!-- action value -->
+
+            <TextView
+                android:id="@+id/orderReviewAction"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/separator1"
+                android:text="@string/orderReviewAction" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator2"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/labelOrderReviewAction" />
+
+            <!-- symbol -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewSymbol"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator2"
+                android:text="@string/labelOrderReviewSymbol" />
+
+            <!-- symbol value -->
+
+            <TextView
+                android:id="@+id/orderReviewSymbol"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+                
+                android:layout_below="@+id/separator2"
+                android:text="@string/orderReviewSymbol" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator3"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewSymbol" />
+
+            <!-- name -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewName"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator3"
+                android:text="@string/labelOrderReviewName" />
+
+            <!-- name value -->
+
+            <TextView
+                android:id="@+id/orderReviewName"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+               
+                android:layout_below="@+id/separator3"
+                android:text="@string/orderReviewName" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator4"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewName" />
+
+            <!-- shares -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewShares"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator4"
+                android:text="@string/labelOrderReviewShares" />
+
+            <!-- share value -->
+
+            <TextView
+                android:id="@+id/orderReviewShares"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+               
+                android:layout_below="@+id/separator4"
+                android:text="@string/orderReviewShares" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator5"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewShares" />
+
+            <!-- order type -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewOrderType"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator5"
+                android:text="@string/labelOrderReviewOrderType" />
+
+            <!-- order type  value -->
+
+            <TextView
+                android:id="@+id/orderReviewOrderType"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+               
+                android:layout_below="@+id/separator5"
+                android:text="@string/orderReviewOrderType" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator6"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewOrderType" />
+
+            <!-- label quote-->
+
+            <TextView
+                android:id="@+id/labelOrderReviewQuote"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator6"
+                android:text="@string/labelOrderReviewQuote" />
+
+            <!-- quote value -->
+
+            <TextView
+                android:id="@+id/orderReviewQuote"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+               
+                android:layout_below="@+id/separator6"
+                android:text="@string/orderReviewQuote" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator7"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewQuote" />
+
+            <!-- label est cost-->
+
+            <TextView
+                android:id="@+id/labelOrderReviewEstimatedCost"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator7"
+                android:text="@string/labelOrderReviewEstimatedCost" />
+
+            <!-- est cost value -->
+
+            <TextView
+                android:id="@+id/orderReviewEstimatedCost"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+                android:layout_below="@+id/separator7"
+                android:text="@string/orderReviewEstimatedCost" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator8"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewEstimatedCost" />
+
+            <!-- label base commission -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewBaseCommssn"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator8"
+                android:text="@string/labelOrderReviewBaseCommssn" />
+
+            <!-- base commission value -->
+
+            <TextView
+                android:id="@+id/orderReviewBaseCommssn"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+                android:layout_below="@+id/separator8"
+                android:text="@string/orderReviewBaseCommssn" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator9"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/orderReviewBaseCommssn" />
+
+            <!-- label est total -->
+
+            <TextView
+                android:id="@+id/labelOrderReviewEstimatedTotal"
+                style="@style/marketDataTextView.Left"
+                android:layout_below="@+id/separator9"
+                android:text="@string/labelOrderReviewEstimatedTotal" />
+
+            <!-- est total value -->
+
+            <TextView
+                android:id="@+id/orderReviewEstimatedTotal"
+                style="@style/marketDataTextView.Left.Value"
+                android:layout_alignLeft="@+id/orderReviewAccount"
+                android:layout_below="@+id/separator9"
+                android:text="@string/orderReviewEstimatedTotal" />
+
+            <!-- the vertical line separator -->
+
+            <View
+                android:id="@+id/separator10"
+                style="@style/textViewLineSeparator"
+                android:layout_below="@+id/tradeMarketCapital" />
+
+           
+        </RelativeLayout>
+        </ScrollView>
+        
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_below="@+id/scrollViewOrderReviewContent"
+            android:orientation="vertical" >
+			
+           <Button
+                android:id="@+id/actionPlaceOrder"
+                style="@style/button.green"
+                android:text="@string/actionPlaceOrder" />
+           
+            <Button
+                android:id="@+id/actionCancelOrder"
+                style="@style/button.gray"
+                android:text="@string/actionCancelOrder" />
+        </LinearLayout>
+
+</RelativeLayout>

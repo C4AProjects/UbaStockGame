@@ -76,4 +76,42 @@
     <string name="tradeProfileCompanyEmployeesCount">4,961</string>
     <string name="labelTradeProfileCompanyBusinessNature">Nature of Business</string>
     <string name="tradeProfileCompanyBusinessNature">PZ Industries is a well diversified company that operates across a large scale of industries including the manufacturing and sale of consumer products, electronic appliances and the wholesale distribution of general merchandise. Its consumer products line includes such items as soaps, detergents, cosmetics, pharmaceuticals and confectionary items. The company\'s electronic products include refrigerators, freezers, air conditioners and plastic containers. </string>
+    
+    <!-- buy/sale stock -->
+    <string name="labelTradeBuyAccountBalance">Account Balance:</string>
+    <string name="tradeBuyAccountBalance">N100,000</string>
+    <string name="actionReviewOrder">Review Order</string>
+    <string name="hintOrderType">Order Type</string>
+    <string name="hintOrderSymbol">Symbol</string>
+    <string name="hintOrderShares">Shares</string>
+    
+    <!-- review order-->
+    <string name="labelTradeOrderReview">Order Review</string>
+    <string name="actionPlaceOrder">Place Order</string>
+    <string name="actionCancelOrder">Cancel</string>
+    <string name="labelOrderReviewAccount">Account</string>
+    <string name="orderReviewAccount">000010010</string>
+    <string name="labelOrderReviewAction">Action</string>
+    <string name="orderReviewAction">Buy</string>
+    <string name="labelOrderReviewSymbol">Symbol</string>
+    <string name="orderReviewSymbol">7UP</string>
+    <string name="labelOrderReviewName">Name</string>
+    <string name="orderReviewName">7UP Bottle</string>
+    <string name="labelOrderReviewShares">Shares</string>
+    <string name="orderReviewShares">100</string>
+    <string name="labelOrderReviewOrderType">Order Type</string>
+    <string name="orderReviewOrderType">Market</string>
+    <string name="labelOrderReviewQuote">Quote</string>
+    <string name="orderReviewQuote">N100.00</string>
+    <string name="labelOrderReviewEstimatedCost">Estimated Cost</string>
+    <string name="orderReviewEstimatedCost">N10,000.00</string>
+    <string name="labelOrderReviewBaseCommssn">Base Commission</string>
+    <string name="orderReviewBaseCommssn">N50.00</string>
+    <string name="labelOrderReviewEstimatedTotal">Estimated Total</string>
+    <string name="orderReviewEstimatedTotal">N10,050.00</string>
+    
+    <!-- stock item listing -->
+    <string name="stock_item_title">7UP</string>
+    <string name="hint_stock_search">Stock quote look up&#8230;</string>
+    
     </resources>

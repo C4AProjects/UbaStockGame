@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#d5e9eb"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+
+    <!-- stock item details label -->
+
+    <RelativeLayout
+        android:id="@+id/relativeStockDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/previousCloseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/previousCloseLabel"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/symbolLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/symbolLabel"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCompanyName"
+        style="@style/relativeLayoutCompanyProfile"
+        android:layout_below="@+id/relativeStockDetails"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="2dip"
+        android:paddingLeft="5dip"
+        android:background="@android:color/transparent"
+        android:paddingBottom="0dip" >
+
+        <!-- label account balance -->
+
+        <TextView
+            android:id="@+id/labelTradeBuyAccountBalance"
+            style="@style/marketDataTextView.Left"
+            android:text="@string/labelTradeBuyAccountBalance"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Company Name value -->
+
+        <TextView
+            android:id="@+id/tradeBuyAccountBalance"
+            style="@style/marketDataTextView.Left.Value"
+            android:layout_height="60dip"
+            android:layout_alignBottom="@+id/labelTradeBuyAccountBalance"
+            android:layout_toEndOf="@+id/labelTradeBuyAccountBalance"
+            android:text="@string/tradeBuyAccountBalance"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/relativeLayoutCompanyName"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/inputOrderType"
+                style="@style/edit_text"
+                android:hint="@string/hintOrderType"
+                android:inputType="text">
+                <requestFocus />
+               </EditText>
+
+            <EditText
+                android:id="@+id/inputOrderSymbol"
+                style="@style/edit_text"
+                android:hint="@string/hintOrderSymbol"
+                android:inputType="textCapCharacters">
+                 </EditText>
+                 
+            <EditText
+                android:id="@+id/inputOrderShares"
+                style="@style/edit_text"
+                android:hint="@string/hintOrderShares"
+                android:inputType="number">
+                 </EditText>
+            <Button
+                android:id="@+id/actionReviewOrder"
+                style="@style/button.green"
+                android:text="@string/actionReviewOrder" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

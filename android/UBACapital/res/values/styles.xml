@@ -112,6 +112,11 @@
         <item name="android:background">@drawable/button_background_red</item>
     </style>
     
+     <!-- gray button style -->
+    <style name="button.gray">
+        <item name="android:background">@drawable/button_background_gray</item>
+    </style>
+    
     <style name="trivia_screen_label">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
