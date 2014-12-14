@@ -13,6 +13,7 @@ import com.ubagroup.capital.app.base.Screen;
  *
  */
 public class SignUpScreen extends Screen {
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		root = inflater.inflate(R.layout.sign_up_screen, container, false);

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sky_blue" >
+    android:background="@color/sky_blue"
+    tools:context="com.ubagroup.capital.app.SettingsActivity" >
 
     <LinearLayout
-        android:id="@+id/settingRowContainer"
+        android:id="@+id/settingsRowsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_small3"
@@ -53,12 +55,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:contentDescription="@string/default_content_description"
                 android:layout_centerVertical="true"
+                android:contentDescription="@string/default_content_description"
                 android:src="@drawable/right_arrow" />
-
         </RelativeLayout>
-
+        
         <RelativeLayout
             android:id="@+id/RelativeLayout01"
             style="@style/settings_row_container"
@@ -85,7 +86,6 @@
                 android:contentDescription="@string/default_content_description"
                 android:src="@drawable/right_arrow" />
         </RelativeLayout>
-
     </LinearLayout>
 
     <Button
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/dimen_small4"
+        android:layout_margin="@dimen/dimen_small2"
         android:background="@drawable/button_background_red"
         android:text="@string/saveSettingsButton"
         android:textColor="@color/white" />

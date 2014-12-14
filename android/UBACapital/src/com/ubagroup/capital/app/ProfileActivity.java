@@ -1,8 +1,11 @@
 package com.ubagroup.capital.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -102,7 +105,27 @@ public class ProfileActivity extends Act {
     	}
     }
     
-    private void setActionBarTitle(int position) {
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case android.R.id.home:
+        	onBackPressed();
+        	return true;
+        case R.id.action_settings:
+        	startActivity(new Intent(this, SettingsActivity.class));
+        	return true;
+        default:
+            return super.onOptionsItemSelected(item);
+        }
+    }
+    
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+    	getMenuInflater().inflate(R.menu.profile, menu);
+    	return true;
+	}
+
+	private void setActionBarTitle(int position) {
     	String title;
     	switch (position) {
     	case 0 : title = "Profile"; break;

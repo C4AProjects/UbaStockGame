@@ -3,7 +3,6 @@ package com.ubagroup.capital.app.base;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -31,17 +30,6 @@ public class Act extends FragmentActivity {
 			transaction.addToBackStack(null);
 		transaction.commit();
 	}
-	
-	@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-        case android.R.id.home:
-        	onBackPressed();
-            return true;
-        default:
-            return super.onOptionsItemSelected(item);
-        }
-    }
 	
 	public View getView(int id) {
 		return findViewById(id);
