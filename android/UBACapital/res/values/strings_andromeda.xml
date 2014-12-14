@@ -63,5 +63,17 @@
     <string name="labelTradeTodaysLow">Today\'s Low</string>
     <string name="tradeTodaysLow">28.00</string>
     <string name="labelTradeBestAskOffer">Best Ask/Offer</string>
-    <string name="tradeBestAskOffer">N/A</string>
+    <string name="tradeBestAskOffer">N/A</string> 
+    
+    <!-- trade company profile -->
+    <string name="labelTradeProfileCompanyName">Company Name</string>
+    <string name="tradeProfileCompanyName">PZ Cussons Nigeria PLC</string>
+    <string name="labelTradeProfileCompanyOtherName">Other Name(s)</string>
+    <string name="tradeProfileCompanyOtherName"></string>
+    <string name="labelTradeProfileCompanyPreviousName">Previous Name(s)</string>
+    <string name="tradeProfileCompanyPreviousName">PZ Industries PLC</string>
+    <string name="labelTradeProfileCompanyEmployeesCount">Number of Employees</string>
+    <string name="tradeProfileCompanyEmployeesCount">4,961</string>
+    <string name="labelTradeProfileCompanyBusinessNature">Nature of Business</string>
+    <string name="tradeProfileCompanyBusinessNature">PZ Industries is a well diversified company that operates across a large scale of industries including the manufacturing and sale of consumer products, electronic appliances and the wholesale distribution of general merchandise. Its consumer products line includes such items as soaps, detergents, cosmetics, pharmaceuticals and confectionary items. The company\'s electronic products include refrigerators, freezers, air conditioners and plastic containers. </string>
     </resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewCompanyProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="7dip"
+    android:orientation="vertical"
+     >
+    
+    <!-- stock item details lable -->
+    <RelativeLayout
+            android:id="@+id/relativeStockDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/previousCloseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/previousCloseLabel"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/symbolLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/symbolLabel"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    
+     <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyName"
+            style="@style/relativeLayoutCompanyProfile"
+            android:layout_marginTop="10dip"
+             >
+
+            <!-- label Company Name -->
+
+            <TextView
+                android:id="@+id/labelTradeProfileCompanyName"
+                style="@style/marketDataTextView.Left.ProfileLabel"
+                android:text="@string/labelTradeProfileCompanyName" />
+
+            <!-- Company Name value -->
+
+            <TextView
+                android:id="@+id/tradeProfileCompanyName"
+                style="@style/marketDataTextView.Left.ProfileContent"
+                android:layout_alignLeft="@+id/labelTradeProfileCompanyName"
+                android:layout_below="@+id/labelTradeProfileCompanyName"
+                android:text="@string/tradeProfileCompanyName" />
+            </RelativeLayout>
+            
+     <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyOtherName"
+            style="@style/relativeLayoutCompanyProfile" >
+
+            <!-- label Company Other Name -->
+
+            <TextView
+                android:id="@+id/labelTradeProfileCompanyOtherName"
+                style="@style/marketDataTextView.Left.ProfileLabel"
+                android:text="@string/labelTradeProfileCompanyOtherName" />
+
+            <!-- Company Other Name value -->
+
+            <TextView
+                android:id="@+id/tradeProfileCompanyOtherName"
+                style="@style/marketDataTextView.Left.ProfileContent"
+                android:layout_alignLeft="@+id/labelTradeProfileCompanyOtherName"
+                android:layout_below="@+id/labelTradeProfileCompanyOtherName"
+                android:text="@string/tradeProfileCompanyOtherName" />
+            </RelativeLayout>
+            
+      <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyPreviousName"
+           style="@style/relativeLayoutCompanyProfile" >
+
+            <!-- label Company Previous Name -->
+
+            <TextView
+                android:id="@+id/labelTradeProfileCompanyPreviousName"
+                style="@style/marketDataTextView.Left.ProfileLabel"
+                android:text="@string/labelTradeProfileCompanyPreviousName" />
+
+            <!-- Company Previous Name value -->
+
+            <TextView
+                android:id="@+id/tradeProfileCompanyPreviousName"
+                style="@style/marketDataTextView.Left.ProfileContent"
+                android:layout_alignLeft="@+id/labelTradeProfileCompanyPreviousName"
+                android:layout_below="@+id/labelTradeProfileCompanyPreviousName"
+                android:text="@string/tradeProfileCompanyPreviousName" />
+            </RelativeLayout>
+            
+      <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyEmployeesCount"
+            style="@style/relativeLayoutCompanyProfile"
+             >
+
+            <!-- label Number of Employees -->
+
+            <TextView
+                android:id="@+id/labelTradeProfileCompanyEmployeesCount"
+                style="@style/marketDataTextView.Left.ProfileLabel"
+                android:text="@string/labelTradeProfileCompanyEmployeesCount" />
+
+            <!-- Number of Employees value -->
+
+            <TextView
+                android:id="@+id/tradeProfileCompanyEmployeesCount"
+                style="@style/marketDataTextView.Left.ProfileContent"
+                android:layout_alignLeft="@+id/labelTradeProfileCompanyEmployeesCount"
+                android:layout_below="@+id/labelTradeProfileCompanyEmployeesCount"
+                android:text="@string/tradeProfileCompanyEmployeesCount" />
+            </RelativeLayout>
+            
+      <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyBusinessNature"
+            style="@style/relativeLayoutCompanyProfile" >
+
+            <!-- label Nature of Business -->
+
+            <TextView
+                android:id="@+id/labelTradeProfileCompanyBusinessNature"
+                style="@style/marketDataTextView.Left.ProfileLabel"
+                android:text="@string/labelTradeProfileCompanyBusinessNature" />
+
+            <!-- Nature of Business value -->
+
+            <TextView
+                android:id="@+id/tradeProfileCompanyBusinessNature"
+                style="@style/marketDataTextView.Left.ProfileContent"
+                android:layout_alignLeft="@+id/labelTradeProfileCompanyBusinessNature"
+                android:gravity="left"
+                android:layout_below="@+id/labelTradeProfileCompanyBusinessNature"
+                android:text="@string/tradeProfileCompanyBusinessNature" />
+            </RelativeLayout>
+    
+    </LinearLayout>
+    
+</ScrollView>

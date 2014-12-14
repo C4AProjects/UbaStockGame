@@ -90,6 +90,18 @@
          <item name="android:gravity">center</item>
     </style>
     
+      <style name="marketDataTextView.Left.ProfileLabel">
+          <item name="android:layout_height">wrap_content</item>
+          <item name="android:textColor">@color/black</item>
+          <item name="android:textSize">15sp</item>
+      </style>
+      
+       <style name="marketDataTextView.Left.ProfileContent">
+          <item name="android:padding">0dip</item>
+          <item name="android:layout_marginBottom">3dip</item>
+          <item name="android:layout_height">wrap_content</item>
+      </style>
+    
     <style name="marketDataTextView.Right">
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:paddingBottom">5dp</item>
@@ -109,5 +121,16 @@
          <item name="android:layout_alignParentRight">false</item>
          <item name="android:layout_marginRight">5dp</item>
      </style>
+     
+    <style name="relativeLayoutCompanyProfile">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">7dip</item>
+        <item name="android:layout_marginRight">7dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:background">@drawable/layer_card_background</item>
+    </style>
 
 </resources>
