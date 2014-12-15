@@ -5,8 +5,7 @@
     android:background="#d5e9eb"
     android:clickable="false"
     android:focusable="false"
-    android:focusableInTouchMode="true"
-    >
+    android:focusableInTouchMode="true" >
 
     <!-- stock item details label -->
 
@@ -40,13 +39,13 @@
     <RelativeLayout
         android:id="@+id/relativeLayoutCompanyName"
         style="@style/relativeLayoutCompanyProfile"
-        android:layout_below="@+id/relativeStockDetails"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeStockDetails"
         android:layout_marginBottom="0dip"
         android:layout_marginTop="2dip"
-        android:paddingLeft="5dip"
         android:background="@android:color/transparent"
-        android:paddingBottom="0dip" >
+        android:paddingBottom="0dip"
+        android:paddingLeft="5dip" >
 
         <!-- label account balance -->
 
@@ -73,9 +72,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_below="@+id/relativeLayoutCompanyName"
-         >
+        android:layout_centerInParent="true" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,27 +85,34 @@
                 android:id="@+id/inputOrderType"
                 style="@style/edit_text"
                 android:hint="@string/hintOrderType"
-                android:inputType="text">
+                android:inputType="text" >
+
                 <requestFocus />
-               </EditText>
+            </EditText>
 
             <EditText
                 android:id="@+id/inputOrderSymbol"
                 style="@style/edit_text"
                 android:hint="@string/hintOrderSymbol"
-                android:inputType="textCapCharacters">
-                 </EditText>
-                 
+                android:inputType="textCapCharacters" >
+            </EditText>
+
             <EditText
                 android:id="@+id/inputOrderShares"
                 style="@style/edit_text"
                 android:hint="@string/hintOrderShares"
-                android:inputType="number">
-                 </EditText>
+                android:inputType="number" >
+            </EditText>
+
             <Button
                 android:id="@+id/actionReviewOrder"
                 style="@style/button.green"
                 android:text="@string/actionReviewOrder" />
+
+            <Button
+                android:id="@+id/actionCancel"
+                style="@style/button.gray"
+                android:text="@string/actionCancelOrder" />
         </LinearLayout>
     </ScrollView>
 

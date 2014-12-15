@@ -44,12 +44,12 @@
         <Button
             android:id="@+id/twitterButton"
             style="@style/social_network_button.twitter"
-            android:text="@string/facebookButton" />
+            android:text="@string/twitterButton" />
 
         <Button
             android:id="@+id/facebookButton"
             style="@style/social_network_button.facebook"
-            android:text="@string/twitterButton" />
+            android:text="@string/facebookButton" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item 
-        android:state_pressed="false" 
-        android:drawable="@drawable/button_background_green_normal"/>
+        android:state_pressed="false" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+       </shape>
+    </item>
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/light_green" />
-            <corners  android:radius="@dimen/dimen_small1"/>
+            <solid android:color="@color/gray" />
        </shape>
      </item>
 </selector>

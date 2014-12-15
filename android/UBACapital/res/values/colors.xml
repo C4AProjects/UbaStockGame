@@ -15,7 +15,8 @@
     <color name="blue">#50A7D4</color>
     <color name="dark_blue">#3668AF</color>
     <color name="yellow">#F3D748</color>
-    <color name="sky_blue">#CAE2E4</color>
+    <color name="sky_blue">#cde5e9</color>
     <color name="app_gray">#9B9EA0</color>
     <color name="button_gray">#555555</color>
+    <color name="navy_blue">#53C4D4</color>
 </resources>

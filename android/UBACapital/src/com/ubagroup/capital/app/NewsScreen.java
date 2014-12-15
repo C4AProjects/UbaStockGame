@@ -9,22 +9,22 @@ import android.view.ViewGroup;
 import com.ubagroup.capital.app.base.Screen;
 
 /**
- * Trade screen
+ * News screen
  * @author saladthieves
  *
  */
-public class TradeScreen extends Screen {
+public class NewsScreen extends Screen {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		root = inflater.inflate(R.layout.trade_screen, container, false);
-		replaceScreen(new StockListingScreen(), false);
+		root = inflater.inflate(R.layout.news_screen, container, false);
+		replaceScreen(new NewsListScreen(), false);
 		return root;
 	}
 	
 	public void replaceScreen(Screen screen, boolean addToStack) {
 		FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-		transaction.add(R.id.trade_fragment_container, screen);
+		transaction.add(R.id.news_fragment_container, screen);
 		if (addToStack) transaction.addToBackStack(null);
 		transaction.commit();
 	}
