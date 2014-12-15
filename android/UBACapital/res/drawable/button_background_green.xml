@@ -5,7 +5,7 @@
         android:drawable="@drawable/button_background_green_normal"/>
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/white" />
+            <solid android:color="@color/light_green" />
             <corners  android:radius="@dimen/dimen_small1"/>
        </shape>
      </item>

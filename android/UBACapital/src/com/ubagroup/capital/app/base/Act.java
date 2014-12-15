@@ -1,6 +1,5 @@
 package com.ubagroup.capital.app.base;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.Toast;
 import com.ubagroup.capital.app.R;
 
 /**
- * Easy implementation of the FragmentActivity class with added benfits, such as easily adding 
+ * Easy implementation of the FragmentActivity class with added benefits, such as easily adding 
  * Screens/Fragments and quickly toasting messages :D
  * 
  * @author saladthieves
@@ -23,9 +22,9 @@ public class Act extends FragmentActivity {
 	 * @param fragment
 	 * @param addToStack
 	 */
-	public void replaceScreen(Fragment fragment, boolean addToStack) {
+	public void replaceScreen(Screen screen, boolean addToStack) {
 		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-		transaction.replace(R.id.fragmentContainer, fragment);
+		transaction.replace(R.id.fragmentContainer, screen);
 		if (addToStack)
 			transaction.addToBackStack(null);
 		transaction.commit();
