@@ -9,8 +9,7 @@
      </item>
      <item
           android:top="0.5dp"
-          android:bottom="0.5dp"
-          >
+          android:bottom="0.5dp">
           <shape
                android:shape="rectangle" >
                <solid
