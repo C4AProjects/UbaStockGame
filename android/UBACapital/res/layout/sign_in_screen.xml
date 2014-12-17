@@ -33,23 +33,35 @@
             android:text="@string/sign_in_button" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/socialButtonContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@style/social_network_button.facebook"
-        android:orientation="horizontal" >
+        android:layout_below="@style/social_network_button.facebook" >
 
         <Button
             android:id="@+id/twitterButton"
             style="@style/social_network_button.twitter"
             android:text="@string/twitterButton" />
+        <RelativeLayout
+            android:id="@+id/socialButtonContainerSeparator"
+            android:layout_margin="@dimen/dimen_tiny1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
 
         <Button
             android:id="@+id/facebookButton"
             style="@style/social_network_button.facebook"
             android:text="@string/facebookButton" />
-    </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/genericContentDescription"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sign_in_screen_social_network_icon"/>
+    </RelativeLayout>
 
 </RelativeLayout>

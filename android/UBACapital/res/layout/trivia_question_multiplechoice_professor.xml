@@ -1,166 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-     android:paddingLeft="@dimen/dimen_small2"
-    android:paddingRight="@dimen/dimen_small2"
-    android:background="@drawable/screen_background" >
-    
-     <ImageView
-         android:id="@+id/triviaSscreenImageView"
-         android:layout_width="100dp"
-         android:layout_height="100dp"
-         android:layout_gravity="left"
-         android:layout_marginLeft="0dp"
-         android:contentDescription="@string/genericContentDescription"
-         android:src="@drawable/trivia_screen_image" />
+    android:background="@drawable/screen_background"
+    android:paddingLeft="@dimen/dimen_small2"
+    android:paddingRight="@dimen/dimen_small2" >
 
-     <RelativeLayout
-         android:id="@+id/profStatementHolder"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_marginLeft="62dp"
-         android:layout_marginRight="5dp"
-         android:orientation="vertical"
-         android:paddingBottom="@dimen/dimen_small3" >
+    <ImageView
+        android:id="@+id/trivia_question_multiplechoice_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/genericContentDescription"
+        android:src="@drawable/trivia_screen_image" />
 
-         <LinearLayout
-             android:id="@+id/profStatement"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="5dp"
-             android:layout_marginRight="5dp"
-             android:orientation="vertical"
-             android:layout_toEndOf="@+id/rightArrow"
-             android:background="@drawable/trivia_professor_bubble"
-             android:padding="5dip" >
-             
-             <!-- sample of the logic -->
-             <!--@string/textCorrectAnswer NICE WORK! (in green if answer is correct) -->
-             <!--@string/textWrongAnswer SORRY! (in red if answer is correct) -->
-             <TextView
-                 android:id="@+id/textOutcome"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:gravity="left"
-                 android:text="@string/textWrongAnswer"
-                 android:textAppearance="?android:attr/textAppearanceSmall"
-                 android:textColor="@color/red"
-                 android:textSize="15sp" />
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/trivia_question_multiplechoice_image"
+        android:layout_alignTop="@+id/trivia_question_multiplechoice_image"
+        android:layout_toRightOf="@+id/trivia_question_multiplechoice_image"
+        android:contentDescription="@string/genericContentDescription"
+        android:src="@drawable/trivia_screen_left_arrow" />
 
-             <TextView
-                 android:id="@+id/textStatement"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:gravity="center_vertical"
-                 android:text="@string/triviaAnswerExplaination2"
-                 android:textAppearance="?android:attr/textAppearanceSmall"
-                 android:textColor="#64717a"
-                 android:textSize="15sp" />
-             
-         </LinearLayout>
-
-         <View
-             android:id="@+id/rightArrow"
-             android:layout_width="33dp"
-             android:layout_height="33dp"
-             android:layout_alignTop="@+id/profStatement"
-             android:layout_alignParentLeft="true"
-             android:background="@drawable/shape_triangle"
-             android:rotation="-90" />
-         
-          <LinearLayout
-             android:id="@+id/triviaProgressHolder"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="5dp"
-             android:layout_marginRight="5dp"
-             android:layout_below="@+id/profStatement"
-             android:layout_toEndOf="@+id/rightArrow"
-             android:orientation="horizontal"
-             android:background="@drawable/trivia_professor_bubble"
-             android:padding="5dip" >
-                
-                <ProgressBar
-                    android:id="@+id/triviaProgressBar"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="15dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_weight=".5"
-                    android:indeterminateOnly="false"
-                    android:max="5"
-                    android:progress="2"
-                    android:progressDrawable="@drawable/trivia_progressbar_clip" >
-
-                </ProgressBar>
-                
-                 <TextView
-                     android:id="@+id/triviaQuestionNumber"
-                     android:layout_width="0dp"
-                     android:layout_height="wrap_content"
-                     android:layout_weight="0.17"
-                     android:gravity="right"
-                     android:text="@string/triviaQuestionNumber2"
-                     android:textAppearance="?android:attr/textAppearanceSmall"
-                     android:textColor="#64717a"
-                     android:textSize="14sp" />
-                
-            </LinearLayout>  
-         
-     </RelativeLayout>
-     
-     <!-- question and the options area -->
-          <ScrollView
+    <RelativeLayout
+        android:id="@+id/profStatementHolder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-          
-            <LinearLayout
+        android:layout_marginBottom="@dimen/dimen_small4"
+        android:layout_toRightOf="@+id/leftArrow"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/profStatement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/trivia_professor_bubble"
+            android:minHeight="90dp"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <!-- sample of the logic -->
+            <!-- @string/textCorrectAnswer NICE WORK! (in green if answer is correct) -->
+            <!-- @string/textWrongAnswer SORRY! (in red if answer is correct) -->
+
+            <TextView
+                android:id="@+id/textOutcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/textWrongAnswer"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textStatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/triviaAnswerExplaination2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#64717a"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/triviaProgressHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profStatement"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/triviaProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/triviaQuestionNumber"
+                android:indeterminateOnly="false"
+                android:max="5"
+                android:progress="2"
+                android:progressDrawable="@drawable/trivia_progressbar_background" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/triviaQuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_tiny4"
+                android:gravity="right"
+                android:text="@string/triviaQuestionNumber2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/triviaQuestion"
+        style="@style/trivia_screen_label.trivia_question"
+        android:text="@string/triviaQuestion2" />
+
+    <!-- question and the options area -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/triviaQuestion"
+        android:layout_gravity="bottom" >
+
+        <LinearLayout
             android:id="@+id/triviaInfoContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/dimen_small3"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_small3" >
 
-
-            <TextView
-                android:id="@+id/triviaQuestion"
-                style="@style/trivia_screen_label.subtitle"
-                android:gravity="left"
-                android:text="@string/triviaQuestion2" />
-             
             <!-- sample of the logic -->
-            <!--@string/triviaOption1 (selected/expected CORRECT ANSWER) in green -->
-            <!--@string/triviaOption2 (selected WRONG ANSWER) in red -->
-            <!--@string/triviaOption3 SORRY! (among the provided choices) remains with default color if unselected -->
-            <Button
-                android:id="@+id/triviaOption1"
-                style="@style/trivia_button"
-                android:textColor="@color/green"
-                android:text="@string/triviaOption1" />
+            <!-- @string/triviaOption1 (selected/expected CORRECT ANSWER) in green -->
+            <!-- @string/triviaOption2 (selected WRONG ANSWER) in red -->
+            <!-- @string/triviaOption3 SORRY! (among the provided choices) remains with default color if unselected -->
 
-            <Button
-                android:id="@+id/triviaOption2"
-                style="@style/trivia_button"
-                android:textColor="@color/red"
-                android:text="@string/triviaOption2" />
-            <Button
-                android:id="@+id/triviaOption3"
-                style="@style/trivia_button"
-                android:textColor="@color/black"
-                android:text="@string/triviaOption3" />
+            <LinearLayout
+                android:id="@+id/triviaButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
 
-           
-            
             <Button
                 android:id="@+id/actionNext"
                 style="@style/button.green"
                 android:layout_width="200dp"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/actionNext" />
-
         </LinearLayout>
     </ScrollView>
-    
-    </FrameLayout>
+
+</RelativeLayout>

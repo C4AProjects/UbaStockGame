@@ -31,7 +31,7 @@
              android:layout_marginTop="5dp"
              android:layout_marginRight="5dp"
              android:orientation="vertical"
-             android:layout_toEndOf="@+id/rightArrow"
+             android:layout_toEndOf="@+id/leftArrow"
              android:background="@drawable/trivia_professor_bubble"
              android:padding="5dip" >
              
@@ -47,7 +47,7 @@
          </LinearLayout>
 
          <View
-             android:id="@+id/rightArrow"
+             android:id="@+id/leftArrow"
              android:layout_width="33dp"
              android:layout_height="33dp"
              android:layout_alignTop="@+id/profStatement"
@@ -62,7 +62,7 @@
              android:layout_marginTop="5dp"
              android:layout_marginRight="5dp"
              android:layout_below="@+id/profStatement"
-             android:layout_toEndOf="@+id/rightArrow"
+             android:layout_toEndOf="@+id/leftArrow"
              android:orientation="horizontal"
              android:background="@drawable/trivia_professor_bubble"
              android:padding="5dip" >
@@ -77,7 +77,7 @@
                     android:indeterminateOnly="false"
                     android:max="5"
                     android:progress="1"
-                    android:progressDrawable="@drawable/trivia_progressbar_clip" >
+                    android:progressDrawable="@drawable/trivia_progressbar_background" >
 
                 </ProgressBar>
                 

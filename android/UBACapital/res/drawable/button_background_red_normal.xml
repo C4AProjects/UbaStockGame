@@ -6,7 +6,7 @@
                <solid
                     android:color="@color/dark_red" />
                <corners 
-                   android:radius="@dimen/dimen_small1"/>
+                   android:radius="@dimen/dimen_tiny4"/>
           </shape>
      </item>
      <item
@@ -16,7 +16,7 @@
                <solid
                     android:color="@color/red" />
                <corners 
-                   android:radius="@dimen/dimen_small1"/>
+                   android:radius="@dimen/dimen_tiny4"/>
           </shape>
      </item>
 </layer-list>

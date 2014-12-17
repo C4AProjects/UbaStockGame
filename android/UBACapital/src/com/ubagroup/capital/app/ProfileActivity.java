@@ -62,7 +62,7 @@ public class ProfileActivity extends Act {
 		setContentView(R.layout.activity_profile);
 		
 		viewPager = (ViewPager)getView(R.id.viewPager);
-		screenPagerAdapter = new ScreenPagerAdapter(getSupportFragmentManager(), this);
+		screenPagerAdapter = new ScreenPagerAdapter(getSupportFragmentManager());
 		viewPager.setAdapter(screenPagerAdapter);
 		viewPager.setOnPageChangeListener(pageChangeListener);
 		viewPager.setOffscreenPageLimit(FRAGMENT_COUNT);
@@ -239,6 +239,10 @@ public class ProfileActivity extends Act {
 		if (position == 3) 
 			return activated ? R.drawable.tab_icon_news_acitve : R.drawable.tab_icon_news_inacitve;
 		return activated ? R.drawable.tab_icon_history_acitve : R.drawable.tab_icon_history_inacitve;
+	}
+	
+	public void activateViewPagerScreen(int position) {
+		viewPager.setCurrentItem(position);
 	}
     
     @Override

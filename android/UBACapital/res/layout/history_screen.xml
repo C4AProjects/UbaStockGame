@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        style="@style/screen_logo"
+        android:contentDescription="@string/genericContentDescription" />
+
+    <TextView
+        android:id="@+id/commingSoonLabel"
+        style="@style/trivia_screen_label.title"
+        android:text="@string/historyComingSoon" />
+
+</RelativeLayout>
