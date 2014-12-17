@@ -114,4 +114,28 @@
     <string name="stock_item_title">7UP</string>
     <string name="hint_stock_search">Stock quote look up&#8230;</string>
     
+    <!-- trivia -->
+    <string name="profInvestQuestion">Is this statement TRUE or FALSE?</string>
+    <string name="triviaQuestionNumber">1 of 5</string>
+    <string name="triviaQuestionNumber2">2 of 5</string>
+    <string name="triviaFalse">False</string>
+    <string name="triviaTrue">True</string>
+    <string name="triviaOption1">Stock Investment</string>
+    <string name="triviaOption2">Bond Investment</string>
+    <string name="triviaOption3">Treasury Bills</string>
+    <string name="actionSubmit">Submit</string>
+    <string name="actionNext">Next</string>
+    <string name="actionBack">Back to Quiz Page</string>
+    <string name="triviaQuestion">Is Investing the same thing as saving money?</string>
+    <string name="triviaQuestion2">Which of the following forms of investment gives me an ownership right in a company?</string>
+    <string name="triviaAnswerExplaination">Investing is the proactive use of your money to make money.</string>
+    <string name="triviaAnswerExplaination2">A stock is a partial ownership in a company, with rights to share in its profits. When an investor buys a stock in a company, he is called a shareholder or stockholder of that company.</string>
+    <string name="textCorrectAnswer">NICE WORK!</string>
+    <string name="textWrongAnswer">SORRY!</string>
+    <string name="startTriviaMessage">GET READY!</string>
+    <string name="triviaResultsMessage">CONGRATULATIONS!</string>
+    <string name="triviaScore">3 of 5</string>
+    <string name="triviaTitle">Trade Definitions Quiz</string>
+    <string name="triviaResultsSummary">That brings your total quiz score to 254</string>
+    
     </resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:paddingLeft="@dimen/dimen_small2"
+    android:paddingRight="@dimen/dimen_small2"
+    android:paddingTop="@dimen/dimen_small2" >
+    
+    <TextView
+          android:id="@+id/triviaResultsMessage"
+          style="@style/trivia_screen_label.title"
+          
+          android:layout_height="wrap_content"
+          android:text="@string/triviaResultsMessage" />
+
+		 <RelativeLayout
+		android:id="@+id/triviaScoreContainer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/triviaResultsMessage"
+		android:background="@android:color/transparent"
+		android:layout_marginTop="30dp"  >
+		
+		<ProgressBar
+		android:id="@+id/circularProgressBar"
+		android:layout_centerInParent="true"
+		android:background="@android:color/transparent"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="150dip"
+		android:layout_height="150dip"
+		android:indeterminate="false"
+		android:max="5"
+		android:progress="3"
+		android:progressDrawable="@drawable/trivia_results_ring" />
+		
+		<TextView
+		android:id="@+id/triviaScore"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:text="@string/triviaScore" />
+		
+		</RelativeLayout>
+
+      <LinearLayout
+          android:id="@+id/triviaResultsStats"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/triviaResultsMessage"
+          android:layout_centerVertical="true"
+          android:orientation="vertical" >
+
+          <TextView
+              android:id="@+id/triviaResultsSummary"
+              style="@style/trivia_screen_label.subtitle"
+              android:layout_height="wrap_content"
+              
+              android:text="@string/triviaResultsSummary"
+              android:textSize="13sp" />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/triviaTitle"
+          style="@style/trivia_screen_label.title"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/triviaResultsStats"
+          android:layout_below="@+id/triviaResultsStats"
+          android:text="@string/triviaTitle" />
+
+</RelativeLayout>
