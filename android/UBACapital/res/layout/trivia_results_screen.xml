@@ -6,70 +6,187 @@
     android:paddingLeft="@dimen/dimen_small2"
     android:paddingRight="@dimen/dimen_small2"
     android:paddingTop="@dimen/dimen_small2" >
-    
-    <TextView
-          android:id="@+id/triviaResultsMessage"
-          style="@style/trivia_screen_label.title"
-          
-          android:layout_height="wrap_content"
-          android:text="@string/triviaResultsMessage" />
 
-		 <RelativeLayout
-		android:id="@+id/triviaScoreContainer"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentTop="true"
-		android:layout_centerHorizontal="true"
-		android:layout_below="@+id/triviaResultsMessage"
-		android:background="@android:color/transparent"
-		android:layout_marginTop="30dp"  >
-		
-		<ProgressBar
-		android:id="@+id/circularProgressBar"
-		android:layout_centerInParent="true"
-		android:background="@android:color/transparent"
-		style="?android:attr/progressBarStyleHorizontal"
-		android:layout_width="150dip"
-		android:layout_height="150dip"
-		android:indeterminate="false"
-		android:max="5"
-		android:progress="3"
-		android:progressDrawable="@drawable/trivia_results_ring" />
-		
-		<TextView
-		android:id="@+id/triviaScore"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_centerVertical="true"
-		android:text="@string/triviaScore" />
-		
-		</RelativeLayout>
+       <LinearLayout
+                android:id="@+id/layoutPlayerRank"
+                style="@style/layoutStyle"
+                android:background="@drawable/layer_card_background"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                
+                android:layout_below="@+id/triviaTitle"
+                android:orientation="horizontal" >
 
-      <LinearLayout
-          android:id="@+id/triviaResultsStats"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_alignLeft="@+id/triviaResultsMessage"
-          android:layout_centerVertical="true"
-          android:orientation="vertical" >
+                <!-- avatar -->
+
+                 <LinearLayout
+                     android:id="@+id/linearPlayerAvatar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iconPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/pearls_female_icon" />
+
+                  
+                </LinearLayout>
+
+                <!-- state rank -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutStateRank"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical" >
+
+                   
+
+                    <TextView
+                        android:id="@+id/stateRankLabel"
+                        style="@style/AccountProfileText"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stateRankLabel"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/stateRank"
+                        style="@style/AccountProfileText"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stateRank"
+                        android:textColor="#51c5d4" />
+                </LinearLayout>
+
+                <!--country rank-->
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCountryRank"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/countryRankLabel"
+                        style="@style/AccountProfileText"
+                        android:gravity="center_horizontal"
+                        android:text="@string/countryRankLabel"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/countryRank"
+                        style="@style/AccountProfileText"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/countryRank"
+                        android:textColor="#51c5d4" />
+                </LinearLayout>
+            </LinearLayout>
+            
+       <!-- trade or access portofolio action items -->
+          <LinearLayout
+              android:id="@+id/layoutActionItems"
+              style="@style/layoutStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/layoutPlayerRank"
+              android:layout_alignRight="@+id/layoutPlayerRank"
+              android:background="@android:color/transparent"
+              android:orientation="horizontal" >
+
+              <Button
+                  android:id="@+id/actionCheckPortfolio"
+                  style="@style/button.gray"
+                  android:layout_width="120dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="@string/actionCheckPortfolio"
+                  android:textSize="14sp" />
+
+              <Button
+                  android:id="@+id/actionStartTrading"
+                  style="@style/button.gray"
+                  android:layout_width="120dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="@string/actionStartTrading"
+                  android:textSize="14sp" />
+          </LinearLayout>
 
           <TextView
+              android:id="@+id/triviaTitle"
+              style="@style/trivia_screen_label.title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="@string/triviaTitle" />
+
+          <RelativeLayout
+              android:id="@+id/triviaScoreContainer"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/layoutActionItems"
+              android:layout_alignParentTop="true"
+              android:background="@android:color/transparent"
+              android:padding="7dp" >
+
+              <TextView
+                  android:id="@+id/triviaResultsMessage"
+                  style="@style/trivia_screen_label.title"
+                  android:layout_height="wrap_content"
+                  android:text="@string/triviaResultsMessage" />
+
+              <ProgressBar
+                  android:id="@+id/circularProgressBar"
+                  style="?android:attr/progressBarStyleHorizontal"
+                  android:layout_width="150dip"
+                  android:layout_height="150dip"
+                  android:layout_below="@+id/triviaResultsMessage"
+                  android:layout_centerInParent="true"
+                  android:indeterminate="false"
+                  android:max="100"
+                  android:progress="45"
+                  android:progressDrawable="@drawable/trivia_results_ring" />
+
+              <TextView
+                  android:id="@+id/triviaScore"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:text="@string/triviaScore"
+                  android:textColor="@color/white" />
+              
+               <TextView
               android:id="@+id/triviaResultsSummary"
               style="@style/trivia_screen_label.subtitle"
+              android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              
               android:text="@string/triviaResultsSummary"
-              android:textSize="13sp" />
-
-      </LinearLayout>
-
-      <TextView
-          android:id="@+id/triviaTitle"
-          style="@style/trivia_screen_label.title"
-          android:layout_height="wrap_content"
-          android:layout_alignLeft="@+id/triviaResultsStats"
-          android:layout_below="@+id/triviaResultsStats"
-          android:text="@string/triviaTitle" />
+              android:layout_below="@+id/circularProgressBar"
+              android:textSize="14sp" />
+          </RelativeLayout>
+          
+           <Button
+              android:id="@+id/actionBackToTrivia"
+              style="@style/button.red"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/layoutActionItems"
+              android:text="@string/actionBack" />
+          
+     
 
 </RelativeLayout>

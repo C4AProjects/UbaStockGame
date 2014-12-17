@@ -12,7 +12,7 @@ public class MainActivity extends Act {
 		super.onCreate(savedInstanceState); 
 		setContentView(R.layout.activity_main);
 		
-		replaceScreen(new WelcomeScreen(), false);
+		replaceScreen(new ExperimentScreen(), false);
 	}
 	
 	@Override

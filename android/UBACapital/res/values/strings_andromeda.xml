@@ -134,8 +134,14 @@
     <string name="textWrongAnswer">SORRY!</string>
     <string name="startTriviaMessage">GET READY!</string>
     <string name="triviaResultsMessage">CONGRATULATIONS!</string>
-    <string name="triviaScore">3 of 5</string>
+    <string name="triviaScore">%1$s of %2$s</string>
     <string name="triviaTitle">Trade Definitions Quiz</string>
     <string name="triviaResultsSummary">That brings your total quiz score to 254</string>
+    <string name="stateRankLabel">State Rank</string>
+    <string name="stateRank">450 of 500</string>
+    <string name="countryRankLabel">Country Rank</string>
+    <string name="countryRank">450 of 500</string>
+    <string name="actionCheckPortfolio">Check Portfolio</string>
+    <string name="actionStartTrading">Start Trading</string>
     
     </resources>
